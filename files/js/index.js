@@ -4,7 +4,7 @@ buttons.forEach(butt => {
         var idMod = butt.getAttribute('id');
         switch (idMod) {
             case 'TMO':
-                copyClipboard('MangasDotNet.txt');
+                copyClipboard('MangasDotNet.json');
                 break;
         
             default:
@@ -12,10 +12,11 @@ buttons.forEach(butt => {
         }
     });
     butt.addEventListener('pointerdown', () => {
+        document.getElementById('prueba').innerText = 'PointerDown';
         var idMod = butt.getAttribute('id');
         switch (idMod) {
             case 'TMO':
-                copyClipboard('MangasDotNet.txt');
+                copyClipboard('MangasDotNet.json');
                 break;
         
             default:
@@ -24,12 +25,18 @@ buttons.forEach(butt => {
     });
 });
 
-function copyClipboard(modulo) {
-    fetch('modules/' + modulo)
-    .then(res => res.text())
-    .then(content => {
-        var copyText = content;
-        navigator.clipboard.writeText(copyText);
+
+
+async function copyClipboard(modulo) {
+    try {
+        await navigator.clipboard.writeText(location.href);
+        document.getElementById('result').innerText = 'Copiado';
+    } catch (err) {
+        document.getElementById('result').innerText = 'Error: ' + err;
     }
-    );
-}
+    try{
+        copy(location.href);
+        document.getElementById('result2').innerText = 'Copiado';
+    } catch (err) {
+        document.getElementById('result2').innerText = 'Error: ' + err;
+ 
