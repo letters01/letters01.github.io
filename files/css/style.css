@@ -1,0 +1,80 @@
+/*Globales*/
+html{
+    font-size: 62.6%;
+    box-sizing: border-box; /*Ayuda Box Model*/
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {  /*Ayuda Box Model*/
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;    /*1rem = 10px*/
+    font-family: 'Montserrat' sans-serif;
+    background-image: linear-gradient(to top, #DFE9F3 0%, var (--blanco) 100%);
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*Navbar*/
+
+.navbar-brand img {
+    border-radius: 1rem;
+}
+.container-fluid {
+    width: 120rem;
+}
+.container-fluid h1:nth-child(2){
+    font-size: x-large;
+    font-weight: 500;
+    pointer-events: none;
+    color: #d7dddd;
+}
+.container-fluid button{
+    font-size: large;
+}
+.container-fluid button:focus{
+    outline: none;
+}
+
+/*Modulos*/
+.data-info {
+    display: flex;
+    flex-direction: row;
+    gap: .8rem;
+}
+.container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.info .mod-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.img-module {
+    display: contents;
+}
+.img-module img{
+    width: 70px;
+    height: 70px;
+    border-radius: 1.3rem;
+    justify-content: center;
+}
+.container-buttons{
+    display: flex;
+    flex-direction: column;
+}
+.info .specs {
+    font-size: 1rem;
+}
