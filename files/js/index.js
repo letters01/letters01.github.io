@@ -39,4 +39,5 @@ async function copyClipboard(modulo) {
         document.getElementById('result2').innerText = 'Copiado';
     } catch (err) {
         document.getElementById('result2').innerText = 'Error: ' + err;
- 
+    }
+}
