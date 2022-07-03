@@ -8,31 +8,38 @@ botones.forEach(boton => {
                 await copyC('../../modules/LectorTMO.json');
                 break;
             case 'MDT':
-                await copyC('../../modules/MangasDotNet.json');
-                await navigator.clipboard.writeText('Buneas noches');
-                console.trace();
+                await copyC('../../modules/MangasDotNet.json').then((tex) => writeToClipboard(tex));
+                
                 break;
             default:
                 break;
         }
     })
 });
-
-async function copyC(module) {
+async function writeToClipboard(text) {
     try {
-        await fetch('../../modules/LectorTMO.json')
+      await navigator.clipboard.writeText(text);
+    } catch (error) {
+      console.error(error);
+    }
+}
+async function copyC(modulo) {
+    try {
+        const resp = await fetch(modulo);
+        const text = await resp.text();
+        return text;
+        /*await fetch(modulo)
         .then(resp => resp.text())
         .then(text => {
             document.getElementById('result').innerText = 'Copiado';
             document.getElementById('result2').innerText = text;
-            navigator.clipboard.writeText(text);
-            document.getElementById('result3').innerText = console.trace();
+            return 
         })
         .catch(err => {
             console.trace();
             document.getElementById('result3').innerText = err;
-        })
+        })*/
     } catch (error) {
-        
+        console.error(error);
     }
 }
