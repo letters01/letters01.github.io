@@ -1,3 +1,4 @@
+
 var buttons = document.querySelectorAll('.list-group .container-buttons button');
 buttons.forEach(butt => {
     /*
@@ -20,9 +21,9 @@ buttons.forEach(butt => {
         switch (idMod) {
             case 'TMO':
                 await copyClipboard('MangasDotNet.json');
-
+                
                 break;
-
+        
             default:
                 break;
         }
