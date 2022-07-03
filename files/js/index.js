@@ -9,7 +9,7 @@ botones.forEach(boton => {
                 break;
             case 'MDT':
                 await copyC('../../modules/MangasDotNet.json');
-                navigator.clipboard.writeText('Buneas noches');
+                await navigator.clipboard.writeText('Buneas noches');
                 console.trace();
                 break;
             default:
