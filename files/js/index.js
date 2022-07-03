@@ -41,7 +41,7 @@ async function copyClipboard(modulo) {
         await fetch('modules/MangasDotNet.json')
         .then(resp => resp.text())
         .then(text => {
-            await navigator.clipboard.writeText(await text);
+            navigator.clipboard.writeText(text);
         })
         .finally(()=> {
             document.getElementById('result2').innerText = 'Copiado';
