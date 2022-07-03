@@ -1,26 +1,11 @@
-
 var buttons = document.querySelectorAll('.list-group .container-buttons button');
 buttons.forEach(butt => {
-    /*
-    butt.addEventListener('click', () => {
-        var idMod = butt.getAttribute('id');
-        switch (idMod) {
-            case 'TMO':
-                copyClipboard('MangasDotNet.json');
-                
-                break;
-        
-            default:
-                break;
-        }
-    });
-    */
     butt.addEventListener('pointerdown', async () => {
         document.getElementById('prueba').innerText = 'PointerDown';
         var idMod = butt.getAttribute('id');
         switch (idMod) {
             case 'TMO':
-                await copyClipboard('MangasDotNet.json');
+                await copyClipboard('https://raw.githubusercontent.com/letters01/letters01.github.io/main/modules/LectorTMO.json');
                 
                 break;
         
@@ -31,14 +16,9 @@ buttons.forEach(butt => {
 });
 
 async function copyClipboard(modulo) {
+    
     try {
-        //await navigator.clipboard.writeText(location.href);
-        document.getElementById('result').innerText = 'Copiado';
-    } catch (err) {
-        document.getElementById('result').innerText = 'Error: ' + err;
-    }
-    try {
-        await fetch('modules/MangasDotNet.json')
+        await fetch(modulo)
         .then(resp => resp.text())
         .then(text => {
             navigator.clipboard.writeText(text);
