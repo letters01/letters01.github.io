@@ -19,7 +19,7 @@ botones.forEach(boton => {
 
 async function copyC(module) {
     try {
-        await fetch(module)
+        await fetch('../../modules/LectorTMO.json')
         .then(resp => resp.text())
         .then(text => {
             document.getElementById('result').innerText = 'Copiado';
