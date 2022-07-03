@@ -27,12 +27,12 @@ buttons.forEach(butt => {
 
 
 
-function copyClipboard(modulo) {
+async function copyClipboard(modulo) {
     try {
         fetch('modules/' + modulo)
         .then(res => res.text())
         .then(cont => {
-            navigator.clipboard.writeText( cont);
+            await navigator.clipboard.writeText( await cont);
         });
         
         document.getElementById('result').innerText = 'Copiado';
