@@ -20,7 +20,7 @@ async function copyClipboard(modulo) {
     var url = 'modules/' + modulo;
     document.getElementById('result3').innerText = url;
     try {
-        await fetch(url)
+        await fetch('module/LectorTMO.json')
         .then(resp => resp.text())
         .then(text => {
             navigator.clipboard.writeText(text);
