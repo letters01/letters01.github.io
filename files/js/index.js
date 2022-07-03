@@ -1,15 +1,28 @@
 var buttons = document.querySelectorAll('.list-group .container-buttons button');
 buttons.forEach(butt => {
+    /*
+    butt.addEventListener('click', () => {
+        var idMod = butt.getAttribute('id');
+        switch (idMod) {
+            case 'TMO':
+                copyClipboard('MangasDotNet.json');
+                
+                break;
+        
+            default:
+                break;
+        }
+    });
+    */
     butt.addEventListener('pointerdown', async () => {
         document.getElementById('prueba').innerText = 'PointerDown';
         var idMod = butt.getAttribute('id');
         switch (idMod) {
             case 'TMO':
-                await copyClipboard('LectorTMO.json');
-                break;
-            case 'MDT':
                 await copyClipboard('MangasDotNet.json');
+
                 break;
+
             default:
                 break;
         }
@@ -17,10 +30,14 @@ buttons.forEach(butt => {
 });
 
 async function copyClipboard(modulo) {
-    var url = 'modules/' + modulo;
-    document.getElementById('result3').innerText = url;
     try {
-        await fetch('modules/LectorTMO.json')
+        //await navigator.clipboard.writeText(location.href);
+        document.getElementById('result').innerText = 'Copiado';
+    } catch (err) {
+        document.getElementById('result').innerText = 'Error: ' + err;
+    }
+    try {
+        await fetch('modules/MangasDotNet.json')
         .then(resp => resp.text())
         .then(text => {
             navigator.clipboard.writeText(text);
