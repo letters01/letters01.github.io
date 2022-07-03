@@ -1,4 +1,3 @@
-
 var buttons = document.querySelectorAll('.list-group .container-buttons button');
 buttons.forEach(butt => {
     butt.addEventListener('pointerdown', async () => {
@@ -19,7 +18,7 @@ buttons.forEach(butt => {
 
 async function copyClipboard(modulo) {
     try {
-        await fetch('modules/' + modulo)
+        await fetch('modules/' + await modulo)
         .then(resp => resp.text())
         .then(text => {
             navigator.clipboard.writeText(text);
