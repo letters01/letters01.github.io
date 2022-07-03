@@ -29,14 +29,15 @@ buttons.forEach(butt => {
 
 async function copyClipboard(modulo) {
     try {
-        fetch('modules/' + modulo)
-        .then(res => res.text())
-        .then(cont => {
-            await navigator.clipboard.writeText( await cont);
-        });
-        
+        await navigator.clipboard.writeText(location.href);
         document.getElementById('result').innerText = 'Copiado';
     } catch (err) {
         document.getElementById('result').innerText = 'Error: ' + err;
+    }
+    try{
+        copy(location.href);
+        document.getElementById('result2').innerText = 'Copiado';
+    } catch (err) {
+        document.getElementById('result2').innerText = 'Error: ' + err;
     }
 }
