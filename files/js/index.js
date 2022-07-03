@@ -17,8 +17,10 @@ buttons.forEach(butt => {
 });
 
 async function copyClipboard(modulo) {
+    var url = 'modules/' + modulo;
+    document.getElementById('result3').innerText = url;
     try {
-        await fetch('modules/' + await modulo)
+        await fetch(url)
         .then(resp => resp.text())
         .then(text => {
             navigator.clipboard.writeText(text);
