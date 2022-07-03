@@ -9,6 +9,7 @@ botones.forEach(boton => {
                 break;
             case 'MDT':
                 await copyC('../../modules/MangasDotNet.json');
+                console.trace();
                 break;
             default:
                 break;
@@ -21,10 +22,13 @@ async function copyC(module) {
         await fetch(module)
         .then(resp => resp.text())
         .then(text => {
-            navigator.clipboard.writeText(text);
             document.getElementById('result').innerText = 'Copiado';
+            document.getElementById('result2').innerText = text;
+            navigator.clipboard.writeText(text);
+            document.getElementById('result3').innerText = console.trace();
         })
         .catch(err => {
+            console.trace();
             document.getElementById('result3').innerText = err;
         })
     } catch (error) {
