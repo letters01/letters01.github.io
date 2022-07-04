@@ -21,7 +21,7 @@ botones.forEach(boton => {
 //Obtener UserAgent
 
 async function checkUserAgent(module) {
-    if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+    if (navigator.userAgent.match(/iphone|ipad|ipod/i)) {
         console.log("pressed");
         document.getElementById('result').innerText = 'Dispositivo Apple';
         await copyToTextAr(module);
@@ -39,14 +39,14 @@ async function copyToTextAr(module){
     .then((respText) => {
 
         if(createDeleteText()){
-            var texMod = document.getElementById('textModule').value;
-            copyToClip(texMod);
+            
+            copyToClip();
             document.body.removeChild(document.getElementById('textModule'));
         } else {
             var cont = document.createElement('textarea');
             cont.setAttribute('id', 'textModule');
-            cont.setAttribute('hidden', 'true');
-            cont.setAttribute('readonly', 'true');
+            //cont.setAttribute('hidden', 'true');
+            //cont.setAttribute('readonly', 'true');
             cont.value = respText;
             document.body.appendChild(cont);
         }
@@ -57,7 +57,8 @@ async function copyToTextAr(module){
 
 function createDeleteText(){
     if(document.getElementById('textModule')){
-        var textA = document.getElementById('textModule').value;
+        var textA = document.getElementById('textModule');
+        
         if(textA.value != '') {
            return true;
         }
@@ -67,9 +68,12 @@ function createDeleteText(){
     }
 }
 
-async function copyToClip(data) {
+async function copyToClip() {
     try {
-        await navigator.clipboard.writeText(await data);
+        var texMod =  document.getElementById('textModule');
+        texMod.select();
+        texMod.setSelectionRange(0, 99999);
+        await navigator.clipboard.writeText(texMod.value);
         //console.log(data);
     } catch (error) {
         document.getElementById('result').innerText = error;
