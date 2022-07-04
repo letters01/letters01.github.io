@@ -22,7 +22,7 @@ botones.forEach(boton => {
 
 async function checkUserAgent(module) {
     if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
-        console.log("pressed");
+        //console.log("pressed");
         document.getElementById('result').innerText = 'Dispositivo Apple';
         await copyToTextAr(module);
     } else {
@@ -43,7 +43,7 @@ async function copyToTextAr(module){
             copyToClip(texMod);
             document.body.removeChild(document.getElementById('textModule'));
         } else {
-            var cont = document.createElement('textarea', );
+            var cont = document.createElement('textarea');
             cont.setAttribute('id', 'textModule');
             cont.setAttribute('hidden', 'true');
             cont.setAttribute('readonly', 'true');
@@ -73,6 +73,7 @@ async function copyToClip(data) {
         //console.log(data);
     } catch (error) {
         document.getElementById('result').innerText = error;
+        document.getElementById('result2').innerText = document.getElementById('textModule').value;
     }
 }
 
