@@ -5,10 +5,11 @@ botones.forEach(boton => {
         var modu = boton.getAttribute('id');
         switch (modu) {
             case 'TMO':
-                await copyC('../../modules/LectorTMO.json');
+                checkUserAgent('modules/LectorTMO.json');
+                
                 break;
             case 'MDT':
-                await copyC('../../modules/MangasDotNet.json').then((tex) => writeToClipboard(tex));
+               checkUserAgent('modules/MangasDotNet.json');
                 
                 break;
             default:
@@ -16,30 +17,72 @@ botones.forEach(boton => {
         }
     })
 });
-async function writeToClipboard(text) {
-    try {
-      await navigator.clipboard.writeText(text);
-    } catch (error) {
-      console.error(error);
+
+//Obtener UserAgent
+
+async function checkUserAgent(module) {
+    if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+        console.log("pressed");
+        document.getElementById('result').innerText = 'Dispositivo Apple';
+        await copyToTextAr(module);
+    } else {
+        console.log('estas en navegador');
+        fetchOtros(module);
     }
 }
-async function copyC(modulo) {
-    try {
-        const resp = await fetch(modulo);
-        const text = await resp.text();
-        return text;
-        /*await fetch(modulo)
-        .then(resp => resp.text())
-        .then(text => {
-            document.getElementById('result').innerText = 'Copiado';
-            document.getElementById('result2').innerText = text;
-            return 
-        })
-        .catch(err => {
-            console.trace();
-            document.getElementById('result3').innerText = err;
-        })*/
-    } catch (error) {
-        console.error(error);
+
+//Funciones para Apple
+
+async function copyToTextAr(module){
+    await fetch(module)
+    .then(resp => resp.text())
+    .then((respText) => {
+
+        if(createDeleteText()){
+            var texMod = document.getElementById('textModule').value;
+            copyToClip(texMod);
+            document.body.removeChild(document.getElementById('textModule'));
+        } else {
+            var cont = document.createElement('textarea', );
+            cont.setAttribute('id', 'textModule');
+            cont.setAttribute('hidden', 'true');
+            cont.setAttribute('readonly', 'true');
+            cont.value = respText;
+            document.body.appendChild(cont);
+        }
+
+        
+    });
+}
+
+function createDeleteText(){
+    if(document.getElementById('textModule')){
+        var textA = document.getElementById('textModule').value;
+        if(textA.value != '') {
+           return true;
+        }
+    } else {
+        console.log('NO Existe')
+        return false;
     }
+}
+
+async function copyToClip(data) {
+    try {
+        await navigator.clipboard.writeText(data);
+        //console.log(data);
+    } catch (error) {
+        document.getElementById('result').innerText = error;
+    }
+}
+
+
+
+//Funciones otros dispositivos
+async function fetchOtros(module) {
+    await fetch(module)
+    .then(resp => resp.text())
+    .then(cont => {
+        navigator.clipboard.writeText(cont);
+    })
 }
