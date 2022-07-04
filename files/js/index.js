@@ -45,8 +45,8 @@ async function copyToTextAr(module){
         } else {
             var cont = document.createElement('textarea');
             cont.setAttribute('id', 'textModule');
-            cont.setAttribute('hidden', 'true');
-            cont.setAttribute('readonly', 'true');
+            //cont.setAttribute('hidden', 'true');
+            //cont.setAttribute('readonly', 'true');
             cont.value = respText;
             document.body.appendChild(cont);
         }
