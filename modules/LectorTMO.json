@@ -11,7 +11,7 @@
     "moduleType": "Image",
     "baseURL": "https://lectortmo.com/",
     "moduleDeveloperSite": "",
-    "UpdateSite": "",
+    "UpdateSite": "https://github.com/letters01/letters01.github.io/raw/main/modules/LectorTMO.json",
     "preferedServer": "",
     "preferedDownloadServer": "",
     "blackListed": [
