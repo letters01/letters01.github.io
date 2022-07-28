@@ -78,3 +78,9 @@ p {
 .info .specs {
     font-size: 1rem;
 }
+.container-buttons a, .container-buttons button {
+    font-size: 12px;
+}
+.hidden-button {
+    display: none;
+}
