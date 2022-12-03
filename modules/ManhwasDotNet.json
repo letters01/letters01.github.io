@@ -10,8 +10,8 @@
     "moduleLenguage": "ESP",
     "moduleType": "Image",
     "baseURL": "https://www.manhwas.net/es",
-    "moduleDeveloperSite": "",
-    "UpdateSite": "https://raw.githubusercontent.com/letters01/KETSU/main/ManhwaDotNet.json",
+    "moduleDeveloperSite": "https://letters01.github.io/",
+    "UpdateSite": "https://raw.githubusercontent.com/letters01/letters01.github.io/main/modules/ManhwasDotNet.json",
     "preferedServer": "",
     "preferedDownloadServer": "",
     "blackListed": [
