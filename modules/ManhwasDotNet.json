@@ -1,12 +1,12 @@
 {
   "moduleInfo": {
-    "moduleName": "Manhwasdotnet",
+    "moduleName": "ManhwasDotNet",
     "moduleInitials": "MDN",
     "moduleDesc": "Modulo para leer Manhwas uwu",
     "developer": "Letters",
     "moduleID": "666637373",
     "moduleImage": "https://data.whicdn.com/images/338836150/original.jpg",
-    "moduleVersion": 1.83,
+    "moduleVersion": 1.85,
     "moduleLenguage": "ESP",
     "moduleType": "Image",
     "baseURL": "https://www.manhwas.net/es",
@@ -16,7 +16,26 @@
     "preferedDownloadServer": "",
     "blackListed": [
       ""
-    ]
+    ],
+    "moduleCreatorIdlFWyOInFDWQcqWlcqQmw": {
+      "path": "bnsTv",
+      "id": "moduleInfosection",
+      "sectionsHidden": [],
+      "options": {
+        "name": "Module Info",
+        "listName": "Parameters"
+      },
+      "cellsHidden": false
+    },
+    "moduleCreatorIdbexXXkgEybuwCysjCWIi": {
+      "path": "Vcunh",
+      "id": "moduleInfocell",
+      "sectionsHidden": [],
+      "options": {
+        "name": "Parameters"
+      },
+      "cellsHidden": false
+    }
   },
   "global": {
     "variables": [
@@ -46,10 +65,10 @@
         "headers": [
           {
             "key": "",
-            "value": ""
+            "value": "",
+            "moduleCreatorHeaderisActive": true
           }
-        ],
-        "httpBody": null
+        ]
       },
       "extra": {
         "commands": [
@@ -71,9 +90,9 @@
         ]
       },
       "javascriptConfig": {
-        "removeJavascript": true,
-        "loadInWebView": false,
-        "javaScript": "const DefaultLayouts = {ultraWideFull: 'ultraWideFull',ultraWide: 'ultraWide',wideFull: 'wideFull',wide: 'wide',wideStrechedFull: 'wideStrechedFull',wideStrechedFullDouble: 'WideStrechedFullDouble',wideStreched: 'wideStreched',wideStrechedDouble: 'wideStrechedDouble',wideStrechedFullList: 'wideStrechedFullList',wideStrechedList: 'wideStrechedList',doublets: 'doublets',doubletsDouble: 'doubletsDouble',doubletsFull: 'doubletsFull',doubletsFullDouble: 'doubletsFullDouble',doubletsConstant: 'doubletsConstant',doubletsDoubleConstant: 'doubletsDoubleConstant',doubletsFullConstant: 'doubletsFullConstant',doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',longDoublets: 'longDoublets',longDoubletsDouble: 'longDoubletsDouble',longDoubletsFull: 'longDoubletsFull',longDoubletsFullDouble: 'longDoubletsFullDouble',longDoubletsConstant: 'longDoubletsConstant',longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',longDoubletsFullConstant: 'longDoubletsFullConstant',longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',triplets: 'triplets',tripletsDouble: 'tripletsDouble',tripletsFull: 'tripletsFull',tripletsFullDouble: 'tripletsFullDouble',tripletsConstant: 'tripletsConstant',tripletsDoubleConstant: 'tripletsDoubleConstant',tripletsFullConstant: 'tripletsFullConstant',tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',longTriplets: 'longTriplets',longTripletsDouble: 'longTripletsDouble',longTripletsFull: 'longTripletsFull',longTripletsFullDouble: 'longTripletsFullDouble',longTripletsConstant: 'longTripletsConstant',longTripletsDoubleConstant: 'longTripletsDoubleConstant',longTripletsFullConstant: 'longTripletsFullConstant',longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',none: ''};const CellDesings = {Special1: 'Special1',Special2: 'Special2',Special3: 'Special3',small1: 'small1',small2: 'small2',normal1: 'normal1',normal2: 'normal2',normal3: 'normal3',normal4: 'normal4',normal5: 'normal5',normal6: 'normal6',normal7: 'normal7',wide1: 'wide1',wide2: 'wide2',wide3: 'wide3',wide4: 'wide4',wide5: 'wide5',wide6: 'wide6',wide7: 'wide7',wide8: 'wide8',wide9: 'wide9',wide10: 'wide10',wide11: 'wide11'};const Paging = {leading: 'leading',centered: 'centered',none: ''};const Orientation = {horizontal: 'horizontal',vertical: 'vertical'};function MainPage(request, extra, javascriptConfig, output) {this.request = request;this.extra = extra;this.javascriptConfig = javascriptConfig;this.output = output;}function ModuleRequest(url, method, headers, httpBody) {this.url = url;this.method = method;this.headers = headers;this.httpBody = httpBody;}function Extra(commands, extraInfo) {this.commands = commands;this.extraInfo = extraInfo;}function Commands(commandName, params) {this.commandName = commandName;this.params = params;}function JavascriptConfig(removeJavascript, loadInWebView, javaScript) {this.removeJavascript = removeJavascript;this.loadInWebView = loadInWebView;this.javaScript = javaScript;}function KeyValue(key, value) {this.key = key;this.value = value;}function Output(cellDesing, orientation, defaultLayout, paging, section, layout, data) {this.cellDesing = cellDesing;this.orientation = orientation;this.defaultLayout = defaultLayout;this.paging = paging;this.section = section;this.layout = layout;this.data = data;}function Section(sectionName, separator) {this.sectionName = sectionName;this.separator = separator;}function Layout(insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing) {this.insets = insets;this.visibleCellsWidthS = visibleCellsWidthS;this.visibleCellsWidthM = visibleCellsWidthM;this.visibleCellsWidthL = visibleCellsWidthL;this.visibleCellsHeight = visibleCellsHeight;this.heightForVisibleCells = heightForVisibleCells;this.cellSize = cellSize;this.ratio = ratio;this.constant = constant;this.horizontalSpacing = horizontalSpacing;this.verticalSpacing = verticalSpacing;}function Insets(top, bottom, left, right) {this.top = top;this.bottom = bottom;this.left = left;this.right = right;}function Size(width, height) {this.width = width;this.height = height;}function Ratio(inRelation, number1, number2) {this.inRelation = inRelation;this.number1 = number1;this.number2 = number2;}function Data(image, title, description, field1, field2, field3, field4, isChapter, link) {this.image = image;this.title = title;this.description = description;this.field1 = field1;this.field2 = field2;this.field3 = field3;this.field4 = field4;this.isChapter = isChapter;this.link = link;}function quickData(link, image, title, field1) {return new Data(image, title, 'unknown', field1, 'unknown', 'unknown', 'unknown', false, link);}function shuffle(a) {var j, x, i;for (i = a.length - 1; i > 0; i--) {j = Math.floor(Math.random() * (i + 1));x = a[i];a[i] = a[j];a[j] = x;}return a;}var savedData = document.getElementById('ketsu-final-data');var parsedJson = JSON.parse(savedData.innerHTML);let output = parsedJson.output;let emptyKeyValue = [new KeyValue('', '')];var dataArray = [];let lastCaps = document.querySelectorAll('ul.list-unstyled.row > li > article > a');lastCaps.forEach(last => {let title = last.querySelector('h3.title').innerText.trim();let image = new ModuleRequest(last.querySelector('.thumb > figure > img').src, 'get', emptyKeyValue, null);let link = new ModuleRequest(last.href, 'get', emptyKeyValue, null);dataArray.push(quickData(link, image, title, 'MANHWA'));});output.pop();output.push(new Output(CellDesings.Special1, Orientation.horizontal, DefaultLayouts.doublets, Paging.leading, new Section('Recomendados +18', false), null, dataArray));let MainPageObject = new MainPage(new ModuleRequest('https://www.manhwas.net/latest-chapters-18', 'get', emptyKeyValue, null), new Extra([new Commands('', emptyKeyValue)], emptyKeyValue), new JavascriptConfig(false, false, ''), output);var finalJson = JSON.stringify(MainPageObject);savedData.innerHTML = finalJson;"
+        "removeJavascript": false,
+        "loadInWebView": true,
+        "javaScript": "\n        try {\n\n            \n            function setModuleCreatorSettings() {\n    \n                let object = document.querySelector('#ketsu-final-data').textContent;\n                if (object == undefined) {return;}\n                let parsedObject = JSON.parse(object);\n                if (parsedObject == undefined) {return;}\n                \n                if (false) {\n                let updatedRequest = atob(`eyJ1cmwiOiIiLCJtZXRob2QiOiJnZXQiLCJoZWFkZXJzIjpbeyJrZXkiOiIiLCJ2YWx1ZSI6IiIsIm1vZHVsZUNyZWF0b3JIZWFkZXJpc0FjdGl2ZSI6dHJ1ZX1dfQ==`);\n                    if (updatedRequest != '') {\n                        parsedObject['request'] =  JSON.parse(updatedRequest);\n                    }\n                }\n        \n                if (false) {\n                    parsedObject['javascriptConfig']['removeJavascript'] = true;\n                    parsedObject['javascriptConfig']['loadInWebView'] = false;\n                }\n        \n                if (true) {\n                    parsedObject['javascriptConfig']['loadInWebView'] = true;\n                    parsedObject['javascriptConfig']['removeJavascript'] = false;\n                }\n        \n                document.querySelector('#ketsu-final-data').textContent = JSON.stringify(parsedObject);\n\n                if (typeof KETSU_ASYNC === 'undefined') {\n                    return;\n                }\n\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n\n            }\n\n\n        /* JAVASCRIPT STARTS */      const DefaultLayouts = {\n         ultraWideFull: 'ultraWideFull',\n         ultraWide: 'ultraWide',\n         wideFull: 'wideFull',\n         wide: 'wide',\n         wideStrechedFull: 'wideStrechedFull',\n         wideStrechedFullDouble: 'WideStrechedFullDouble',\n         wideStreched: 'wideStreched',\n         wideStrechedDouble: 'wideStrechedDouble',\n         wideStrechedFullList: 'wideStrechedFullList',\n         wideStrechedList: 'wideStrechedList',\n         doublets: 'doublets',\n         doubletsDouble: 'doubletsDouble',\n         doubletsFull: 'doubletsFull',\n         doubletsFullDouble: 'doubletsFullDouble',\n         doubletsConstant: 'doubletsConstant',\n         doubletsDoubleConstant: 'doubletsDoubleConstant',\n         doubletsFullConstant: 'doubletsFullConstant',\n         doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',\n         longDoublets: 'longDoublets',\n         longDoubletsDouble: 'longDoubletsDouble',\n         longDoubletsFull: 'longDoubletsFull',\n         longDoubletsFullDouble: 'longDoubletsFullDouble',\n         longDoubletsConstant: 'longDoubletsConstant',\n         longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',\n         longDoubletsFullConstant: 'longDoubletsFullConstant',\n         longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',\n         triplets: 'triplets',\n         tripletsDouble: 'tripletsDouble',\n         tripletsFull: 'tripletsFull',\n         tripletsFullDouble: 'tripletsFullDouble',\n         tripletsConstant: 'tripletsConstant',\n         tripletsDoubleConstant: 'tripletsDoubleConstant',\n         tripletsFullConstant: 'tripletsFullConstant',\n         tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',\n         longTriplets: 'longTriplets',\n         longTripletsDouble: 'longTripletsDouble',\n         longTripletsFull: 'longTripletsFull',\n         longTripletsFullDouble: 'longTripletsFullDouble',\n         longTripletsConstant: 'longTripletsConstant',\n         longTripletsDoubleConstant: 'longTripletsDoubleConstant',\n         longTripletsFullConstant: 'longTripletsFullConstant',\n         longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',\n         none: ''\n };\n const CellDesings = {\n         Special1: 'Special1',\n         Special2: 'Special2',\n         Special3: 'Special3',\n         small1: 'small1',\n         small2: 'small2',\n         normal1: 'normal1',\n         normal2: 'normal2',\n         normal3: 'normal3',\n         normal4: 'normal4',\n         normal5: 'normal5',\n         normal6: 'normal6',\n         normal7: 'normal7',\n         wide1: 'wide1',\n         wide2: 'wide2',\n         wide3: 'wide3',\n         wide4: 'wide4',\n         wide5: 'wide5',\n         wide6: 'wide6',\n         wide7: 'wide7',\n         wide8: 'wide8',\n         wide9: 'wide9',\n         wide10: 'wide10',\n         wide11: 'wide11'\n };\n const Paging = {\n         leading: 'leading',\n         centered: 'centered',\n         none: ''\n };\n const Orientation = {\n         horizontal: 'horizontal',\n         vertical: 'vertical'\n };\n\n function MainPage ( request, extra, javascriptConfig, output ) {\n         this.request = request;\n         this.extra = extra;\n         this.javascriptConfig = javascriptConfig;\n         this.output = output;\n }\n\n function ModuleRequest ( url, method, headers, httpBody ) {\n         this.url = url;\n         this.method = method;\n         this.headers = headers;\n         this.httpBody = httpBody;\n }\n\n function Extra ( commands, extraInfo ) {\n         this.commands = commands;\n         this.extraInfo = extraInfo;\n }\n\n function Commands ( commandName, params ) {\n         this.commandName = commandName;\n         this.params = params;\n }\n\n function JavascriptConfig ( removeJavascript, loadInWebView, javaScript ) {\n         this.removeJavascript = removeJavascript;\n         this.loadInWebView = loadInWebView;\n         this.javaScript = javaScript;\n }\n\n function KeyValue ( key, value ) {\n         this.key = key;\n         this.value = value;\n }\n\n function Output ( cellDesing, orientation, defaultLayout, paging, section, layout, data ) {\n         this.cellDesing = cellDesing;\n         this.orientation = orientation;\n         this.defaultLayout = defaultLayout;\n         this.paging = paging;\n         this.section = section;\n         this.layout = layout;\n         this.data = data;\n }\n\n function Section ( sectionName, separator ) {\n         this.sectionName = sectionName;\n         this.separator = separator;\n }\n\n function Layout ( insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing ) {\n         this.insets = insets;\n         this.visibleCellsWidthS = visibleCellsWidthS;\n         this.visibleCellsWidthM = visibleCellsWidthM;\n         this.visibleCellsWidthL = visibleCellsWidthL;\n         this.visibleCellsHeight = visibleCellsHeight;\n         this.heightForVisibleCells = heightForVisibleCells;\n         this.cellSize = cellSize;\n         this.ratio = ratio;\n         this.constant = constant;\n         this.horizontalSpacing = horizontalSpacing;\n         this.verticalSpacing = verticalSpacing;\n }\n\n function Insets ( top, bottom, left, right ) {\n         this.top = top;\n         this.bottom = bottom;\n         this.left = left;\n         this.right = right;\n }\n\n function Size ( width, height ) {\n         this.width = width;\n         this.height = height;\n }\n\n function Ratio ( inRelation, number1, number2 ) {\n         this.inRelation = inRelation;\n         this.number1 = number1;\n         this.number2 = number2;\n }\n\n function Data ( image, title, description, field1, field2, field3, field4, isChapter, link ) {\n         this.image = image;\n         this.title = title;\n         this.description = description;\n         this.field1 = field1;\n         this.field2 = field2;\n         this.field3 = field3;\n         this.field4 = field4;\n         this.isChapter = isChapter;\n         this.link = link;\n }\n\n function quickData ( link, image, title, field1 ) {\n         return new Data( image, title, 'unknown', field1, 'unknown', 'unknown', 'unknown', false, link );\n }\n\n function shuffle ( a ) {\n         var j, x, i;\n         for ( i = a.length - 1; i > 0; i-- ) {\n                 j = Math.floor( Math.random( ) * ( i + 1 ) );\n                 x = a[ i ];\n                 a[ i ] = a[ j ];\n                 a[ j ] = x;\n         }\n         return a;\n }\n var savedData = document.getElementById( 'ketsu-final-data' );\n var parsedJson = JSON.parse( savedData.innerHTML );\n let output = parsedJson.output;\n let emptyKeyValue = [ new KeyValue( '', '' ) ];\n var dataArray = [ ];\n\nwindow.addEventListener('load', function () {\n        let lastCaps = document.querySelectorAll('ul.list-unstyled.row > li > article > a');\n        lastCaps.forEach(last => {\n                let title = last.querySelector('h3.title').innerText.trim();\n                let image = new ModuleRequest(last.querySelector('.thumb > figure > img').src, 'get', emptyKeyValue, null);\n                let link = new ModuleRequest(last.href, 'get', emptyKeyValue, null);\n                dataArray.push(quickData(link, image, title, 'MANHWA'));\n        });\n        output.pop();\n        output.push(new Output(CellDesings.Special1, Orientation.horizontal, DefaultLayouts.doublets, Paging.leading, new Section('Recomendados +18', false), null, dataArray));\n        let MainPageObject = new MainPage(new ModuleRequest('https://www.manhwas.net/latest-chapters-18', 'get', emptyKeyValue, null), new Extra([new Commands('', emptyKeyValue)], emptyKeyValue), new JavascriptConfig(false, false, ''), output);\n        var finalJson = JSON.stringify(MainPageObject);\n        savedData.innerHTML = finalJson;\n});\n     /* JAVASCRIPT ENDS */\n        \n        setModuleCreatorSettings();\n        \n        \n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
       },
       "output": [
         {
@@ -148,7 +167,20 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleCreatorIdBrjvKOuszCdpNZylBpSK": {
+        "path": "SfTRz",
+        "id": "mainPage,0cell",
+        "sectionsHidden": [],
+        "options": {
+          "name": "Request"
+        },
+        "cellsHidden": false,
+        "openedMenu": "Settings",
+        "javascriptEditorScroll": 142,
+        "async": false,
+        "openedRequestMenu": "Headers"
+      }
     },
     {
       "request": {
@@ -157,10 +189,10 @@
         "headers": [
           {
             "key": "",
-            "value": ""
+            "value": "",
+            "moduleCreatorHeaderisActive": true
           }
-        ],
-        "httpBody": null
+        ]
       },
       "extra": {
         "commands": [
@@ -183,8 +215,8 @@
       },
       "javascriptConfig": {
         "removeJavascript": false,
-        "loadInWebView": false,
-        "javaScript": "const DefaultLayouts = {ultraWideFull: 'ultraWideFull',ultraWide: 'ultraWide',wideFull: 'wideFull',wide: 'wide',wideStrechedFull: 'wideStrechedFull',wideStrechedFullDouble: 'WideStrechedFullDouble',wideStreched: 'wideStreched',wideStrechedDouble: 'wideStrechedDouble',wideStrechedFullList: 'wideStrechedFullList',wideStrechedList: 'wideStrechedList',doublets: 'doublets',doubletsDouble: 'doubletsDouble',doubletsFull: 'doubletsFull',doubletsFullDouble: 'doubletsFullDouble',doubletsConstant: 'doubletsConstant',doubletsDoubleConstant: 'doubletsDoubleConstant',doubletsFullConstant: 'doubletsFullConstant',doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',longDoublets: 'longDoublets',longDoubletsDouble: 'longDoubletsDouble',longDoubletsFull: 'longDoubletsFull',longDoubletsFullDouble: 'longDoubletsFullDouble',longDoubletsConstant: 'longDoubletsConstant',longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',longDoubletsFullConstant: 'longDoubletsFullConstant',longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',triplets: 'triplets',tripletsDouble: 'tripletsDouble',tripletsFull: 'tripletsFull',tripletsFullDouble: 'tripletsFullDouble',tripletsConstant: 'tripletsConstant',tripletsDoubleConstant: 'tripletsDoubleConstant',tripletsFullConstant: 'tripletsFullConstant',tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',longTriplets: 'longTriplets',longTripletsDouble: 'longTripletsDouble',longTripletsFull: 'longTripletsFull',longTripletsFullDouble: 'longTripletsFullDouble',longTripletsConstant: 'longTripletsConstant',longTripletsDoubleConstant: 'longTripletsDoubleConstant',longTripletsFullConstant: 'longTripletsFullConstant',longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',none: ''};const CellDesings = {Special1: 'Special1',Special2: 'Special2',Special3: 'Special3',small1: 'small1',small2: 'small2',normal1: 'normal1',normal2: 'normal2',normal3: 'normal3',normal4: 'normal4',normal5: 'normal5',normal6: 'normal6',normal7: 'normal7',wide1: 'wide1',wide2: 'wide2',wide3: 'wide3',wide4: 'wide4',wide5: 'wide5',wide6: 'wide6',wide7: 'wide7',wide8: 'wide8',wide9: 'wide9',wide10: 'wide10',wide11: 'wide11'};const Paging = {leading: 'leading',centered: 'centered',none: ''};const Orientation = {horizontal: 'horizontal',vertical: 'vertical'};function MainPage(request, extra, javascriptConfig, output) {this.request = request;this.extra = extra;this.javascriptConfig = javascriptConfig;this.output = output;}function ModuleRequest(url, method, headers, httpBody) {this.url = url;this.method = method;this.headers = headers;this.httpBody = httpBody;}function Extra(commands, extraInfo) {this.commands = commands;this.extraInfo = extraInfo;}function Commands(commandName, params) {this.commandName = commandName;this.params = params;}function JavascriptConfig(removeJavascript, loadInWebView, javaScript) {this.removeJavascript = removeJavascript;this.loadInWebView = loadInWebView;this.javaScript = javaScript;}function KeyValue(key, value) {this.key = key;this.value = value;}function Output(cellDesing, orientation, defaultLayout, paging, section, layout, data) {this.cellDesing = cellDesing;this.orientation = orientation;this.defaultLayout = defaultLayout;this.paging = paging;this.section = section;this.layout = layout;this.data = data;}function Section(sectionName, separator) {this.sectionName = sectionName;this.separator = separator;}function Layout(insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing) {this.insets = insets;this.visibleCellsWidthS = visibleCellsWidthS;this.visibleCellsWidthM = visibleCellsWidthM;this.visibleCellsWidthL = visibleCellsWidthL;this.visibleCellsHeight = visibleCellsHeight;this.heightForVisibleCells = heightForVisibleCells;this.cellSize = cellSize;this.ratio = ratio;this.constant = constant;this.horizontalSpacing = horizontalSpacing;this.verticalSpacing = verticalSpacing;}function Insets(top, bottom, left, right) {this.top = top;this.bottom = bottom;this.left = left;this.right = right;}function Size(width, height) {this.width = width;this.height = height;}function Ratio(inRelation, number1, number2) {this.inRelation = inRelation;this.number1 = number1;this.number2 = number2;}function Data(image, title, description, field1, field2, field3, field4, isChapter, link) {this.image = image;this.title = title;this.description = description;this.field1 = field1;this.field2 = field2;this.field3 = field3;this.field4 = field4;this.isChapter = isChapter;this.link = link;}function quickData(link, image, title, desc, field1, field2) {return new Data(image, title, desc, field1, field2, '3', '4', false, link);}function shuffle(a) {var j, x, i;for (i = a.length - 1; i > 0; i--) {j = Math.floor(Math.random() * (i + 1));x = a[i];a[i] = a[j];a[j] = x;}return a;}var savedData = document.getElementById('ketsu-final-data');var parsedJson = JSON.parse(savedData.innerHTML);let output = parsedJson.output;let emptyKeyValue = [new KeyValue('', '')];var dataArray = [];let lastCapsMature = document.querySelectorAll('ul.list-unstyled.row > li > article > a');lastCapsMature.forEach(last => {let title = last.querySelector('h3.title').innerText.trim();let image = new ModuleRequest(last.querySelector('.thumb > figure > img').src, 'get', emptyKeyValue, null);let field1 = last.querySelector('.thumb > span').innerText;var link = last.href.replace('/leer/', '/manga/').split('-');let desc = last.querySelector('small').innerText; link.pop();var linkFix = new ModuleRequest(link.toLocaleString().replaceAll(',', '-'), 'get', emptyKeyValue, null);dataArray.push(quickData(linkFix, image, title, desc, field1, 'MANHWA'));});output.push(new Output(CellDesings.wide11, Orientation.horizontal, DefaultLayouts.wideFull, Paging.leading, new Section('Ultimos Capitulos +18', true), null, dataArray));let MainPageObject = new MainPage(new ModuleRequest('https://www.manhwas.net/latest-chapters-15', 'get', emptyKeyValue, null), new Extra([new Commands('', emptyKeyValue)], emptyKeyValue), new JavascriptConfig(false, false, ''), output);var finalJson = JSON.stringify(MainPageObject);savedData.innerHTML = finalJson;"
+        "loadInWebView": true,
+        "javaScript": "\n        try {\n\n            \n            function setModuleCreatorSettings() {\n    \n                let object = document.querySelector('#ketsu-final-data').textContent;\n                if (object == undefined) {return;}\n                let parsedObject = JSON.parse(object);\n                if (parsedObject == undefined) {return;}\n                \n                if (false) {\n                let updatedRequest = atob(`eyJ1cmwiOiIiLCJtZXRob2QiOiJnZXQiLCJoZWFkZXJzIjpbeyJrZXkiOiIiLCJ2YWx1ZSI6IiIsIm1vZHVsZUNyZWF0b3JIZWFkZXJpc0FjdGl2ZSI6dHJ1ZX1dfQ==`);\n                    if (updatedRequest != '') {\n                        parsedObject['request'] =  JSON.parse(updatedRequest);\n                    }\n                }\n        \n                if (false) {\n                    parsedObject['javascriptConfig']['removeJavascript'] = true;\n                    parsedObject['javascriptConfig']['loadInWebView'] = false;\n                }\n        \n                if (true) {\n                    parsedObject['javascriptConfig']['loadInWebView'] = true;\n                    parsedObject['javascriptConfig']['removeJavascript'] = false;\n                }\n        \n                document.querySelector('#ketsu-final-data').textContent = JSON.stringify(parsedObject);\n\n                if (typeof KETSU_ASYNC === 'undefined') {\n                    return;\n                }\n\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n\n            }\n\n\n        /* JAVASCRIPT STARTS */      const DefaultLayouts = {\n         ultraWideFull: 'ultraWideFull',\n         ultraWide: 'ultraWide',\n         wideFull: 'wideFull',\n         wide: 'wide',\n         wideStrechedFull: 'wideStrechedFull',\n         wideStrechedFullDouble: 'WideStrechedFullDouble',\n         wideStreched: 'wideStreched',\n         wideStrechedDouble: 'wideStrechedDouble',\n         wideStrechedFullList: 'wideStrechedFullList',\n         wideStrechedList: 'wideStrechedList',\n         doublets: 'doublets',\n         doubletsDouble: 'doubletsDouble',\n         doubletsFull: 'doubletsFull',\n         doubletsFullDouble: 'doubletsFullDouble',\n         doubletsConstant: 'doubletsConstant',\n         doubletsDoubleConstant: 'doubletsDoubleConstant',\n         doubletsFullConstant: 'doubletsFullConstant',\n         doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',\n         longDoublets: 'longDoublets',\n         longDoubletsDouble: 'longDoubletsDouble',\n         longDoubletsFull: 'longDoubletsFull',\n         longDoubletsFullDouble: 'longDoubletsFullDouble',\n         longDoubletsConstant: 'longDoubletsConstant',\n         longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',\n         longDoubletsFullConstant: 'longDoubletsFullConstant',\n         longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',\n         triplets: 'triplets',\n         tripletsDouble: 'tripletsDouble',\n         tripletsFull: 'tripletsFull',\n         tripletsFullDouble: 'tripletsFullDouble',\n         tripletsConstant: 'tripletsConstant',\n         tripletsDoubleConstant: 'tripletsDoubleConstant',\n         tripletsFullConstant: 'tripletsFullConstant',\n         tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',\n         longTriplets: 'longTriplets',\n         longTripletsDouble: 'longTripletsDouble',\n         longTripletsFull: 'longTripletsFull',\n         longTripletsFullDouble: 'longTripletsFullDouble',\n         longTripletsConstant: 'longTripletsConstant',\n         longTripletsDoubleConstant: 'longTripletsDoubleConstant',\n         longTripletsFullConstant: 'longTripletsFullConstant',\n         longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',\n         none: ''\n };\n const CellDesings = {\n         Special1: 'Special1',\n         Special2: 'Special2',\n         Special3: 'Special3',\n         small1: 'small1',\n         small2: 'small2',\n         normal1: 'normal1',\n         normal2: 'normal2',\n         normal3: 'normal3',\n         normal4: 'normal4',\n         normal5: 'normal5',\n         normal6: 'normal6',\n         normal7: 'normal7',\n         wide1: 'wide1',\n         wide2: 'wide2',\n         wide3: 'wide3',\n         wide4: 'wide4',\n         wide5: 'wide5',\n         wide6: 'wide6',\n         wide7: 'wide7',\n         wide8: 'wide8',\n         wide9: 'wide9',\n         wide10: 'wide10',\n         wide11: 'wide11'\n };\n const Paging = {\n         leading: 'leading',\n         centered: 'centered',\n         none: ''\n };\n const Orientation = {\n         horizontal: 'horizontal',\n         vertical: 'vertical'\n };\n\n function MainPage ( request, extra, javascriptConfig, output ) {\n         this.request = request;\n         this.extra = extra;\n         this.javascriptConfig = javascriptConfig;\n         this.output = output;\n }\n\n function ModuleRequest ( url, method, headers, httpBody ) {\n         this.url = url;\n         this.method = method;\n         this.headers = headers;\n         this.httpBody = httpBody;\n }\n\n function Extra ( commands, extraInfo ) {\n         this.commands = commands;\n         this.extraInfo = extraInfo;\n }\n\n function Commands ( commandName, params ) {\n         this.commandName = commandName;\n         this.params = params;\n }\n\n function JavascriptConfig ( removeJavascript, loadInWebView, javaScript ) {\n         this.removeJavascript = removeJavascript;\n         this.loadInWebView = loadInWebView;\n         this.javaScript = javaScript;\n }\n\n function KeyValue ( key, value ) {\n         this.key = key;\n         this.value = value;\n }\n\n function Output ( cellDesing, orientation, defaultLayout, paging, section, layout, data ) {\n         this.cellDesing = cellDesing;\n         this.orientation = orientation;\n         this.defaultLayout = defaultLayout;\n         this.paging = paging;\n         this.section = section;\n         this.layout = layout;\n         this.data = data;\n }\n\n function Section ( sectionName, separator ) {\n         this.sectionName = sectionName;\n         this.separator = separator;\n }\n\n function Layout ( insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing ) {\n         this.insets = insets;\n         this.visibleCellsWidthS = visibleCellsWidthS;\n         this.visibleCellsWidthM = visibleCellsWidthM;\n         this.visibleCellsWidthL = visibleCellsWidthL;\n         this.visibleCellsHeight = visibleCellsHeight;\n         this.heightForVisibleCells = heightForVisibleCells;\n         this.cellSize = cellSize;\n         this.ratio = ratio;\n         this.constant = constant;\n         this.horizontalSpacing = horizontalSpacing;\n         this.verticalSpacing = verticalSpacing;\n }\n\n function Insets ( top, bottom, left, right ) {\n         this.top = top;\n         this.bottom = bottom;\n         this.left = left;\n         this.right = right;\n }\n\n function Size ( width, height ) {\n         this.width = width;\n         this.height = height;\n }\n\n function Ratio ( inRelation, number1, number2 ) {\n         this.inRelation = inRelation;\n         this.number1 = number1;\n         this.number2 = number2;\n }\n\n function Data ( image, title, description, field1, field2, field3, field4, isChapter, link ) {\n         this.image = image;\n         this.title = title;\n         this.description = description;\n         this.field1 = field1;\n         this.field2 = field2;\n         this.field3 = field3;\n         this.field4 = field4;\n         this.isChapter = isChapter;\n         this.link = link;\n }\n\n function quickData ( link, image, title, desc, field1, field2 ) {\n         return new Data( image, title, desc, field1, field2, '3', '4', false, link );\n }\n\n function shuffle ( a ) {\n         var j, x, i;\n         for ( i = a.length - 1; i > 0; i-- ) {\n                 j = Math.floor( Math.random( ) * ( i + 1 ) );\n                 x = a[ i ];\n                 a[ i ] = a[ j ];\n                 a[ j ] = x;\n         }\n         return a;\n }\n var savedData = document.getElementById( 'ketsu-final-data' );\n var parsedJson = JSON.parse( savedData.innerHTML );\n let output = parsedJson.output;\n let emptyKeyValue = [ new KeyValue( '', '' ) ];\n var dataArray = [ ];\nwindow.addEventListener('load', function () {\n        let lastCapsMature = document.querySelectorAll('ul.list-unstyled.row > li > article > a');\n        lastCapsMature.forEach(last => {\n                let title = last.querySelector('h3.title').innerText.trim();\n                let image = new ModuleRequest(last.querySelector('.thumb > figure > img').src, 'get', emptyKeyValue, null);\n                let field1 = last.querySelector('.thumb > span').innerText;\n                var link = last.href.replace('/leer/', '/manga/').split('-');\n                let desc = last.querySelector('small').innerText;\n                link.pop();\n                var linkFix = new ModuleRequest(link.toLocaleString().replaceAll(',', '-'), 'get', emptyKeyValue, null);\n                dataArray.push(quickData(linkFix, image, title, desc, field1, 'MANHWA'));\n        });\n        output.push(new Output(CellDesings.wide11, Orientation.horizontal, DefaultLayouts.wideFull, Paging.leading, new Section('Ultimos Capitulos +18', true), null, dataArray));\n        let MainPageObject = new MainPage(new ModuleRequest('https://www.manhwas.net/latest-chapters-15', 'get', emptyKeyValue, null), new Extra([new Commands('', emptyKeyValue)], emptyKeyValue), new JavascriptConfig(false, false, ''), output);\n        var finalJson = JSON.stringify(MainPageObject);\n        savedData.innerHTML = finalJson;\n});     /* JAVASCRIPT ENDS */\n        \n        setModuleCreatorSettings();\n        \n        \n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
       },
       "output": [
         {
@@ -259,7 +291,19 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleCreatorIddqnuTNrSlbhAifGJmrJU": {
+        "path": "VHEuB",
+        "id": "mainPage,1cell",
+        "sectionsHidden": [],
+        "options": {
+          "name": "Request"
+        },
+        "cellsHidden": false,
+        "openedMenu": "Settings",
+        "javascriptEditorScroll": 210,
+        "async": false
+      }
     },
     {
       "request": {
@@ -268,10 +312,10 @@
         "headers": [
           {
             "key": "",
-            "value": ""
+            "value": "",
+            "moduleCreatorHeaderisActive": true
           }
-        ],
-        "httpBody": null
+        ]
       },
       "extra": {
         "commands": [
@@ -294,8 +338,8 @@
       },
       "javascriptConfig": {
         "removeJavascript": false,
-        "loadInWebView": false,
-        "javaScript": "const DefaultLayouts = {ultraWideFull: 'ultraWideFull',ultraWide: 'ultraWide',wideFull: 'wideFull',wide: 'wide',wideStrechedFull: 'wideStrechedFull',wideStrechedFullDouble: 'WideStrechedFullDouble',wideStreched: 'wideStreched',wideStrechedDouble: 'wideStrechedDouble',wideStrechedFullList: 'wideStrechedFullList',wideStrechedList: 'wideStrechedList',doublets: 'doublets',doubletsDouble: 'doubletsDouble',doubletsFull: 'doubletsFull',doubletsFullDouble: 'doubletsFullDouble',doubletsConstant: 'doubletsConstant',doubletsDoubleConstant: 'doubletsDoubleConstant',doubletsFullConstant: 'doubletsFullConstant',doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',longDoublets: 'longDoublets',longDoubletsDouble: 'longDoubletsDouble',longDoubletsFull: 'longDoubletsFull',longDoubletsFullDouble: 'longDoubletsFullDouble',longDoubletsConstant: 'longDoubletsConstant',longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',longDoubletsFullConstant: 'longDoubletsFullConstant',longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',triplets: 'triplets',tripletsDouble: 'tripletsDouble',tripletsFull: 'tripletsFull',tripletsFullDouble: 'tripletsFullDouble',tripletsConstant: 'tripletsConstant',tripletsDoubleConstant: 'tripletsDoubleConstant',tripletsFullConstant: 'tripletsFullConstant',tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',longTriplets: 'longTriplets',longTripletsDouble: 'longTripletsDouble',longTripletsFull: 'longTripletsFull',longTripletsFullDouble: 'longTripletsFullDouble',longTripletsConstant: 'longTripletsConstant',longTripletsDoubleConstant: 'longTripletsDoubleConstant',longTripletsFullConstant: 'longTripletsFullConstant',longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',none: ''};const CellDesings = {Special1: 'Special1',Special2: 'Special2',Special3: 'Special3',small1: 'small1',small2: 'small2',normal1: 'normal1',normal2: 'normal2',normal3: 'normal3',normal4: 'normal4',normal5: 'normal5',normal6: 'normal6',normal7: 'normal7',wide1: 'wide1',wide2: 'wide2',wide3: 'wide3',wide4: 'wide4',wide5: 'wide5',wide6: 'wide6',wide7: 'wide7',wide8: 'wide8',wide9: 'wide9',wide10: 'wide10',wide11: 'wide11'};const Paging = {leading: 'leading',centered: 'centered',none: ''};const Orientation = {horizontal: 'horizontal',vertical: 'vertical'};function MainPage(request, extra, javascriptConfig, output) {this.request = request;this.extra = extra;this.javascriptConfig = javascriptConfig;this.output = output;}function ModuleRequest(url, method, headers, httpBody) {this.url = url;this.method = method;this.headers = headers;this.httpBody = httpBody;}function Extra(commands, extraInfo) {this.commands = commands;this.extraInfo = extraInfo;}function Commands(commandName, params) {this.commandName = commandName;this.params = params;}function JavascriptConfig(removeJavascript, loadInWebView, javaScript) {this.removeJavascript = removeJavascript;this.loadInWebView = loadInWebView;this.javaScript = javaScript;}function KeyValue(key, value) {this.key = key;this.value = value;}function Output(cellDesing, orientation, defaultLayout, paging, section, layout, data) {this.cellDesing = cellDesing;this.orientation = orientation;this.defaultLayout = defaultLayout;this.paging = paging;this.section = section;this.layout = layout;this.data = data;}function Section(sectionName, separator) {this.sectionName = sectionName;this.separator = separator;}function Layout(insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing) {this.insets = insets;this.visibleCellsWidthS = visibleCellsWidthS;this.visibleCellsWidthM = visibleCellsWidthM;this.visibleCellsWidthL = visibleCellsWidthL;this.visibleCellsHeight = visibleCellsHeight;this.heightForVisibleCells = heightForVisibleCells;this.cellSize = cellSize;this.ratio = ratio;this.constant = constant;this.horizontalSpacing = horizontalSpacing;this.verticalSpacing = verticalSpacing;}function Insets(top, bottom, left, right) {this.top = top;this.bottom = bottom;this.left = left;this.right = right;}function Size(width, height) {this.width = width;this.height = height;}function Ratio(inRelation, number1, number2) {this.inRelation = inRelation;this.number1 = number1;this.number2 = number2;}function Data(image, title, description, field1, field2, field3, field4, isChapter, link) {this.image = image;this.title = title;this.description = description;this.field1 = field1;this.field2 = field2;this.field3 = field3;this.field4 = field4;this.isChapter = isChapter;this.link = link;}function quickData(link, image, title, field1, field2) {return new Data(image, title, 'desc', field1, field2, '3', '4', false, link);}function shuffle(a) {var j, x, i;for (i = a.length - 1; i > 0; i--) {j = Math.floor(Math.random() * (i + 1));x = a[i];a[i] = a[j];a[j] = x;}return a;}var savedData = document.getElementById('ketsu-final-data');var parsedJson = JSON.parse(savedData.innerHTML);let output = parsedJson.output;let emptyKeyValue = [new KeyValue('', '')];var dataArray = [];let lastCapsMature = document.querySelectorAll('ul.list-unstyled.row > li > article > a');lastCapsMature.forEach(last => {let title = last.querySelector('h3.title').innerText.trim();let image = new ModuleRequest(last.querySelector('.thumb > figure > img').src, 'get', emptyKeyValue, null);let field1 = last.querySelector('.thumb > span').innerText; let field2 = last.querySelector('small').innerText.trim();var link = last.href.replace('/leer/', '/manga/').split('-');link.pop();var linkFix = new ModuleRequest(link.toLocaleString().replaceAll(',', '-'), 'get', emptyKeyValue, null);dataArray.push(quickData(linkFix, image, title, field1, field2));});output.push(new Output(CellDesings.normal2, Orientation.vertical, DefaultLayouts.longDoubletsDoubleConstant, Paging.leading, new Section('Ultimos Capitulos +15', false), null, dataArray));let MainPageObject = new MainPage(new ModuleRequest('', 'get', emptyKeyValue, null), new Extra([new Commands('', emptyKeyValue)], emptyKeyValue), new JavascriptConfig(false, false, ''), output);var finalJson = JSON.stringify(MainPageObject);savedData.innerHTML = finalJson;"
+        "loadInWebView": true,
+        "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */     const DefaultLayouts = {\n        ultraWideFull: 'ultraWideFull',\n        ultraWide: 'ultraWide',\n        wideFull: 'wideFull',\n        wide: 'wide',\n        wideStrechedFull: 'wideStrechedFull',\n        wideStrechedFullDouble: 'WideStrechedFullDouble',\n        wideStreched: 'wideStreched',\n        wideStrechedDouble: 'wideStrechedDouble',\n        wideStrechedFullList: 'wideStrechedFullList',\n        wideStrechedList: 'wideStrechedList',\n        doublets: 'doublets',\n        doubletsDouble: 'doubletsDouble',\n        doubletsFull: 'doubletsFull',\n        doubletsFullDouble: 'doubletsFullDouble',\n        doubletsConstant: 'doubletsConstant',\n        doubletsDoubleConstant: 'doubletsDoubleConstant',\n        doubletsFullConstant: 'doubletsFullConstant',\n        doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',\n        longDoublets: 'longDoublets',\n        longDoubletsDouble: 'longDoubletsDouble',\n        longDoubletsFull: 'longDoubletsFull',\n        longDoubletsFullDouble: 'longDoubletsFullDouble',\n        longDoubletsConstant: 'longDoubletsConstant',\n        longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',\n        longDoubletsFullConstant: 'longDoubletsFullConstant',\n        longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',\n        triplets: 'triplets',\n        tripletsDouble: 'tripletsDouble',\n        tripletsFull: 'tripletsFull',\n        tripletsFullDouble: 'tripletsFullDouble',\n        tripletsConstant: 'tripletsConstant',\n        tripletsDoubleConstant: 'tripletsDoubleConstant',\n        tripletsFullConstant: 'tripletsFullConstant',\n        tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',\n        longTriplets: 'longTriplets',\n        longTripletsDouble: 'longTripletsDouble',\n        longTripletsFull: 'longTripletsFull',\n        longTripletsFullDouble: 'longTripletsFullDouble',\n        longTripletsConstant: 'longTripletsConstant',\n        longTripletsDoubleConstant: 'longTripletsDoubleConstant',\n        longTripletsFullConstant: 'longTripletsFullConstant',\n        longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',\n        none: ''\n};\nconst CellDesings = {\n        Special1: 'Special1',\n        Special2: 'Special2',\n        Special3: 'Special3',\n        small1: 'small1',\n        small2: 'small2',\n        normal1: 'normal1',\n        normal2: 'normal2',\n        normal3: 'normal3',\n        normal4: 'normal4',\n        normal5: 'normal5',\n        normal6: 'normal6',\n        normal7: 'normal7',\n        wide1: 'wide1',\n        wide2: 'wide2',\n        wide3: 'wide3',\n        wide4: 'wide4',\n        wide5: 'wide5',\n        wide6: 'wide6',\n        wide7: 'wide7',\n        wide8: 'wide8',\n        wide9: 'wide9',\n        wide10: 'wide10',\n        wide11: 'wide11'\n};\nconst Paging = {\n        leading: 'leading',\n        centered: 'centered',\n        none: ''\n};\nconst Orientation = {\n        horizontal: 'horizontal',\n        vertical: 'vertical'\n};\n\nfunction MainPage(request, extra, javascriptConfig, output) {\n        this.request = request;\n        this.extra = extra;\n        this.javascriptConfig = javascriptConfig;\n        this.output = output;\n}\n\nfunction ModuleRequest(url, method, headers, httpBody) {\n        this.url = url;\n        this.method = method;\n        this.headers = headers;\n        this.httpBody = httpBody;\n}\n\nfunction Extra(commands, extraInfo) {\n        this.commands = commands;\n        this.extraInfo = extraInfo;\n}\n\nfunction Commands(commandName, params) {\n        this.commandName = commandName;\n        this.params = params;\n}\n\nfunction JavascriptConfig(removeJavascript, loadInWebView, javaScript) {\n        this.removeJavascript = removeJavascript;\n        this.loadInWebView = loadInWebView;\n        this.javaScript = javaScript;\n}\n\nfunction KeyValue(key, value) {\n        this.key = key;\n        this.value = value;\n}\n\nfunction Output(cellDesing, orientation, defaultLayout, paging, section, layout, data) {\n        this.cellDesing = cellDesing;\n        this.orientation = orientation;\n        this.defaultLayout = defaultLayout;\n        this.paging = paging;\n        this.section = section;\n        this.layout = layout;\n        this.data = data;\n}\n\nfunction Section(sectionName, separator) {\n        this.sectionName = sectionName;\n        this.separator = separator;\n}\n\nfunction Layout(insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing) {\n        this.insets = insets;\n        this.visibleCellsWidthS = visibleCellsWidthS;\n        this.visibleCellsWidthM = visibleCellsWidthM;\n        this.visibleCellsWidthL = visibleCellsWidthL;\n        this.visibleCellsHeight = visibleCellsHeight;\n        this.heightForVisibleCells = heightForVisibleCells;\n        this.cellSize = cellSize;\n        this.ratio = ratio;\n        this.constant = constant;\n        this.horizontalSpacing = horizontalSpacing;\n        this.verticalSpacing = verticalSpacing;\n}\n\nfunction Insets(top, bottom, left, right) {\n        this.top = top;\n        this.bottom = bottom;\n        this.left = left;\n        this.right = right;\n}\n\nfunction Size(width, height) {\n        this.width = width;\n        this.height = height;\n}\n\nfunction Ratio(inRelation, number1, number2) {\n        this.inRelation = inRelation;\n        this.number1 = number1;\n        this.number2 = number2;\n}\n\nfunction Data(image, title, description, field1, field2, field3, field4, isChapter, link) {\n        this.image = image;\n        this.title = title;\n        this.description = description;\n        this.field1 = field1;\n        this.field2 = field2;\n        this.field3 = field3;\n        this.field4 = field4;\n        this.isChapter = isChapter;\n        this.link = link;\n}\n\nfunction quickData(link, image, title, field1, field2) {\n        return new Data(image, title, 'desc', field1, field2, '3', '4', false, link);\n}\n\nfunction shuffle(a) {\n        var j, x, i;\n        for (i = a.length - 1; i > 0; i--) {\n                j = Math.floor(Math.random() * (i + 1));\n                x = a[i];\n                a[i] = a[j];\n                a[j] = x;\n        }\n        return a;\n}\nvar savedData = document.getElementById('ketsu-final-data');\nvar parsedJson = JSON.parse(savedData.innerHTML);\nlet output = parsedJson.output;\nlet emptyKeyValue = [new KeyValue('', '')];\nvar dataArray = [];\nwindow.addEventListener('load', function () {\n        let lastCapsMature = document.querySelectorAll('ul.list-unstyled.row > li > article > a');\n        lastCapsMature.forEach(last => {\n                let title = last.querySelector('h3.title').innerText.trim();\n                let image = new ModuleRequest(last.querySelector('.thumb > figure > img').src, 'get', emptyKeyValue, null);\n                let field1 = last.querySelector('.thumb > span').innerText;\n                let field2 = last.querySelector('small').innerText.trim();\n                var link = last.href.replace('/leer/', '/manga/').split('-');\n                link.pop();\n                var linkFix = new ModuleRequest(link.toLocaleString().replaceAll(',', '-'), 'get', emptyKeyValue, null);\n                dataArray.push(quickData(linkFix, image, title, field1, field2));\n        });\n        output.push(new Output(CellDesings.normal2, Orientation.horizontal, DefaultLayouts.longDoubletsDouble, Paging.leading, new Section('Ultimos Capitulos +15', false), null, dataArray));\n        let MainPageObject = new MainPage(new ModuleRequest('', 'get', emptyKeyValue, null), new Extra([new Commands('', emptyKeyValue)], emptyKeyValue), new JavascriptConfig(false, false, ''), output);\n        var finalJson = JSON.stringify(MainPageObject);\n        savedData.innerHTML = finalJson;\n        window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n});     /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
       },
       "output": [
         {
@@ -370,21 +414,38 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleCreatorIdocWXxEkrPfCcLrKlCrSA": {
+        "path": "oILZm",
+        "id": "mainPage,2cell",
+        "sectionsHidden": [],
+        "options": {
+          "name": "Request"
+        },
+        "cellsHidden": false,
+        "openedMenu": "Settings",
+        "javascriptEditorScroll": 211,
+        "async": false
+      }
     }
   ],
   "search": [
     {
       "request": {
-        "url": "https://www.manhwas.net/biblioteca?buscar=<searched>&page=<page>",
+        "url": "https://www.manhwas.net/biblioteca?buscar=solo&page=1",
         "method": "get",
         "headers": [
           {
             "key": "key",
-            "value": "value"
+            "value": "value",
+            "moduleCreatorHeaderisActive": true
+          },
+          {
+            "key": "",
+            "value": "",
+            "moduleCreatorHeaderisActive": true
           }
-        ],
-        "httpBody": null
+        ]
       },
       "separator": "+",
       "extra": {
@@ -409,7 +470,7 @@
       "javascriptConfig": {
         "removeJavascript": true,
         "loadInWebView": false,
-        "javaScript": "const DefaultLayouts = {ultraWideFull: 'ultraWideFull',ultraWide: 'ultraWide',wideFull: 'wideFull',wide: 'wide',wideStrechedFull: 'wideStrechedFull',wideStrechedFullDouble: 'WideStrechedFullDouble',wideStreched: 'wideStreched',wideStrechedDouble: 'wideStrechedDouble',wideStrechedFullList: 'wideStrechedFullList',wideStrechedList: 'wideStrechedList',doublets: 'doublets',doubletsDouble: 'doubletsDouble',doubletsFull: 'doubletsFull',doubletsFullDouble: 'doubletsFullDouble',doubletsConstant: 'doubletsConstant',doubletsDoubleConstant: 'doubletsDoubleConstant',doubletsFullConstant: 'doubletsFullConstant',doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',longDoublets: 'longDoublets',longDoubletsDouble: 'longDoubletsDouble',longDoubletsFull: 'longDoubletsFull',longDoubletsFullDouble: 'longDoubletsFullDouble',longDoubletsConstant: 'longDoubletsConstant',longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',longDoubletsFullConstant: 'longDoubletsFullConstant',longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',triplets: 'triplets',tripletsDouble: 'tripletsDouble',tripletsFull: 'tripletsFull',tripletsFullDouble: 'tripletsFullDouble',tripletsConstant: 'tripletsConstant',tripletsDoubleConstant: 'tripletsDoubleConstant',tripletsFullConstant: 'tripletsFullConstant',tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',longTriplets: 'longTriplets',longTripletsDouble: 'longTripletsDouble',longTripletsFull: 'longTripletsFull',longTripletsFullDouble: 'longTripletsFullDouble',longTripletsConstant: 'longTripletsConstant',longTripletsDoubleConstant: 'longTripletsDoubleConstant',longTripletsFullConstant: 'longTripletsFullConstant',longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',none: ''};const CellDesings = {Special1: 'Special1',Special2: 'Special2',Special3: 'Special3',small1: 'small1',small2: 'small2',normal1: 'normal1',normal2: 'normal2',normal3: 'normal3',normal4: 'normal4',normal5: 'normal5',normal6: 'normal6',normal7: 'normal7',wide1: 'wide1',wide2: 'wide2',wide3: 'wide3',wide4: 'wide4',wide5: 'wide5',wide6: 'wide6',wide7: 'wide7',wide8: 'wide8',wide9: 'wide9',wide10: 'wide10',wide11: 'wide11'};const Paging = {leading: 'leading',centered: 'centered',none: ''};const Orientation = {horizontal: 'horizontal',vertical: 'vertical'};function Search(request, extra, separator, javascriptConfig, output) {this.request = request;this.extra = extra;this.separator = separator;this.javascriptConfig = javascriptConfig;this.output = output;}function ModuleRequest(url, method, headers, httpBody) {this.url = url;this.method = method;this.headers = headers;this.httpBody = httpBody;}function Extra(commands, extraInfo) {this.commands = commands;this.extraInfo = extraInfo;}function Commands(commandName, params) {this.commandName = commandName;this.params = params;}function JavascriptConfig(removeJavascript, loadInWebView, javaScript) {this.removeJavascript = removeJavascript;this.loadInWebView = loadInWebView;this.javaScript = javaScript;}function KeyValue(key, value) {this.key = key;this.value = value;}function Output(cellDesing, orientation, defaultLayout, paging, section, layout, data) {this.cellDesing = cellDesing;this.orientation = orientation;this.defaultLayout = defaultLayout;this.paging = paging;this.section = section;this.layout = layout;this.data = data;}function Section(sectionName, separator) {this.sectionName = sectionName;this.separator = separator;}function Layout(insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing) {this.insets = insets;this.visibleCellsWidthS = visibleCellsWidthS;this.visibleCellsWidthM = visibleCellsWidthM;this.visibleCellsWidthL = visibleCellsWidthL;this.visibleCellsHeight = visibleCellsHeight;this.heightForVisibleCells = heightForVisibleCells;this.cellSize = cellSize;this.ratio = ratio;this.constant = constant;this.horizontalSpacing = horizontalSpacing;this.verticalSpacing = verticalSpacing;}function Insets(top, bottom, left, right) {this.top = top;this.bottom = bottom;this.left = left;this.right = right;}function Size(width, height) {this.width = width;this.height = height;}function Ratio(inRelation, number1, number2) {this.inRelation = inRelation;this.number1 = number1;this.number2 = number2;}function Data(image, title, description, field1, field2, field3, field4, isChapter, link) {this.image = image;this.title = title;this.description = description;this.field1 = field1;this.field2 = field2;this.field3 = field3;this.field4 = field4;this.isChapter = isChapter;this.link = link;}function quickData(link, image, title, field1) {return new Data(image, title, 'uwu', field1, 'unknown', 'unknown', 'unknown', false, link);}function shuffle(a) {var j, x, i;for (i = a.length - 1; i > 0; i--) {j = Math.floor(Math.random() * (i + 1));x = a[i];a[i] = a[j];a[j] = x;}return a;}var savedData = document.getElementById('ketsu-final-data');var parsedJson = JSON.parse(savedData.innerHTML);let output = [];let emptyKeyValue = [new KeyValue('', '')];var dataArray = [];var dataSearched = document.querySelectorAll('ul.animes > li > article > a');dataSearched.forEach(data => {let title = data.querySelector('h3.title').innerText.trim();let image = new ModuleRequest(data.querySelector('.thumb > figure > img').src, 'get', emptyKeyValue, null); let type = data.querySelector('.thumb > span').innerText.toUpperCase();let link = new ModuleRequest(data.href, 'get', emptyKeyValue, null);dataArray.push(quickData(link, image, title, type));});var testLayout = new Layout(new Insets(10, 10, 10, 10), 1, 2, 3, 1, 500, new Size(400, 400), new Ratio('width', 4, 11), new Size(0, 0), 10, 10);output.push(new Output(CellDesings.wide11, Orientation.vertical, DefaultLayouts.wideFull, Paging.none, new Section('', false), testLayout, dataArray));let searchPageObject = new Search(new ModuleRequest('', '', emptyKeyValue, null), new Extra([new Commands('', emptyKeyValue)], emptyKeyValue), '', new JavascriptConfig(false, false, ''), output);var finalJson = JSON.stringify(searchPageObject);savedData.innerHTML = finalJson;"
+        "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */      const DefaultLayouts = {\n         ultraWideFull: 'ultraWideFull',\n         ultraWide: 'ultraWide',\n         wideFull: 'wideFull',\n         wide: 'wide',\n         wideStrechedFull: 'wideStrechedFull',\n         wideStrechedFullDouble: 'WideStrechedFullDouble',\n         wideStreched: 'wideStreched',\n         wideStrechedDouble: 'wideStrechedDouble',\n         wideStrechedFullList: 'wideStrechedFullList',\n         wideStrechedList: 'wideStrechedList',\n         doublets: 'doublets',\n         doubletsDouble: 'doubletsDouble',\n         doubletsFull: 'doubletsFull',\n         doubletsFullDouble: 'doubletsFullDouble',\n         doubletsConstant: 'doubletsConstant',\n         doubletsDoubleConstant: 'doubletsDoubleConstant',\n         doubletsFullConstant: 'doubletsFullConstant',\n         doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',\n         longDoublets: 'longDoublets',\n         longDoubletsDouble: 'longDoubletsDouble',\n         longDoubletsFull: 'longDoubletsFull',\n         longDoubletsFullDouble: 'longDoubletsFullDouble',\n         longDoubletsConstant: 'longDoubletsConstant',\n         longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',\n         longDoubletsFullConstant: 'longDoubletsFullConstant',\n         longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',\n         triplets: 'triplets',\n         tripletsDouble: 'tripletsDouble',\n         tripletsFull: 'tripletsFull',\n         tripletsFullDouble: 'tripletsFullDouble',\n         tripletsConstant: 'tripletsConstant',\n         tripletsDoubleConstant: 'tripletsDoubleConstant',\n         tripletsFullConstant: 'tripletsFullConstant',\n         tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',\n         longTriplets: 'longTriplets',\n         longTripletsDouble: 'longTripletsDouble',\n         longTripletsFull: 'longTripletsFull',\n         longTripletsFullDouble: 'longTripletsFullDouble',\n         longTripletsConstant: 'longTripletsConstant',\n         longTripletsDoubleConstant: 'longTripletsDoubleConstant',\n         longTripletsFullConstant: 'longTripletsFullConstant',\n         longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',\n         none: ''\n };\n const CellDesings = {\n         Special1: 'Special1',\n         Special2: 'Special2',\n         Special3: 'Special3',\n         small1: 'small1',\n         small2: 'small2',\n         normal1: 'normal1',\n         normal2: 'normal2',\n         normal3: 'normal3',\n         normal4: 'normal4',\n         normal5: 'normal5',\n         normal6: 'normal6',\n         normal7: 'normal7',\n         wide1: 'wide1',\n         wide2: 'wide2',\n         wide3: 'wide3',\n         wide4: 'wide4',\n         wide5: 'wide5',\n         wide6: 'wide6',\n         wide7: 'wide7',\n         wide8: 'wide8',\n         wide9: 'wide9',\n         wide10: 'wide10',\n         wide11: 'wide11'\n };\n const Paging = {\n         leading: 'leading',\n         centered: 'centered',\n         none: ''\n };\n const Orientation = {\n         horizontal: 'horizontal',\n         vertical: 'vertical'\n };\n\n function Search ( request, extra, separator, javascriptConfig, output ) {\n         this.request = request;\n         this.extra = extra;\n         this.separator = separator;\n         this.javascriptConfig = javascriptConfig;\n         this.output = output;\n }\n\n function ModuleRequest ( url, method, headers, httpBody ) {\n         this.url = url;\n         this.method = method;\n         this.headers = headers;\n         this.httpBody = httpBody;\n }\n\n function Extra ( commands, extraInfo ) {\n         this.commands = commands;\n         this.extraInfo = extraInfo;\n }\n\n function Commands ( commandName, params ) {\n         this.commandName = commandName;\n         this.params = params;\n }\n\n function JavascriptConfig ( removeJavascript, loadInWebView, javaScript ) {\n         this.removeJavascript = removeJavascript;\n         this.loadInWebView = loadInWebView;\n         this.javaScript = javaScript;\n }\n\n function KeyValue ( key, value ) {\n         this.key = key;\n         this.value = value;\n }\n\n function Output ( cellDesing, orientation, defaultLayout, paging, section, layout, data ) {\n         this.cellDesing = cellDesing;\n         this.orientation = orientation;\n         this.defaultLayout = defaultLayout;\n         this.paging = paging;\n         this.section = section;\n         this.layout = layout;\n         this.data = data;\n }\n\n function Section ( sectionName, separator ) {\n         this.sectionName = sectionName;\n         this.separator = separator;\n }\n\n function Layout ( insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing ) {\n         this.insets = insets;\n         this.visibleCellsWidthS = visibleCellsWidthS;\n         this.visibleCellsWidthM = visibleCellsWidthM;\n         this.visibleCellsWidthL = visibleCellsWidthL;\n         this.visibleCellsHeight = visibleCellsHeight;\n         this.heightForVisibleCells = heightForVisibleCells;\n         this.cellSize = cellSize;\n         this.ratio = ratio;\n         this.constant = constant;\n         this.horizontalSpacing = horizontalSpacing;\n         this.verticalSpacing = verticalSpacing;\n }\n\n function Insets ( top, bottom, left, right ) {\n         this.top = top;\n         this.bottom = bottom;\n         this.left = left;\n         this.right = right;\n }\n\n function Size ( width, height ) {\n         this.width = width;\n         this.height = height;\n }\n\n function Ratio ( inRelation, number1, number2 ) {\n         this.inRelation = inRelation;\n         this.number1 = number1;\n         this.number2 = number2;\n }\n\n function Data ( image, title, description, field1, field2, field3, field4, isChapter, link ) {\n         this.image = image;\n         this.title = title;\n         this.description = description;\n         this.field1 = field1;\n         this.field2 = field2;\n         this.field3 = field3;\n         this.field4 = field4;\n         this.isChapter = isChapter;\n         this.link = link;\n }\n\n function quickData ( link, image, title, field1 ) {\n         return new Data( image, title, '', field1, '', 'unknown', 'unknown', false, link );\n }\n\n function shuffle ( a ) {\n         var j, x, i;\n         for ( i = a.length - 1; i > 0; i-- ) {\n                 j = Math.floor( Math.random( ) * ( i + 1 ) );\n                 x = a[ i ];\n                 a[ i ] = a[ j ];\n                 a[ j ] = x;\n         }\n         return a;\n }\n var savedData = document.getElementById( 'ketsu-final-data' );\n var parsedJson = JSON.parse( savedData.innerHTML );\n let output = [ ];\n let emptyKeyValue = [ new KeyValue( '', '' ) ];\n var dataArray = [ ];\n var dataSearched = document.querySelectorAll( 'ul.animes > li > article > a' );\n dataSearched.forEach( data => {\n         let title = data.querySelector( 'h3.title' ).innerText.trim( );\n         let image = new ModuleRequest( data.querySelector( '.thumb > figure > img' ).src, 'get', emptyKeyValue, null );\n         let type = data.querySelector( '.thumb > span' ).innerText.toUpperCase( );\n         let link = new ModuleRequest( data.href, 'get', emptyKeyValue, null );\n         dataArray.push( quickData( link, image, title, type ) );\n } );\n var testLayout = new Layout( new Insets( 10, 10, 10, 10 ), 1, 2, 3, 1, 500, new Size( 400, 400 ), new Ratio( 'width', 4, 11 ), new Size( 0, 0 ), 10, 10 );\n output.push( new Output( CellDesings.wide11, Orientation.vertical, DefaultLayouts.wideFull, Paging.none, new Section( '', false ), testLayout, dataArray ) );\n let searchPageObject = new Search( new ModuleRequest( '', '', emptyKeyValue, null ), new Extra( [ new Commands( '', emptyKeyValue ) ], emptyKeyValue ), '', new JavascriptConfig( false, false, '' ), output );\n var finalJson = JSON.stringify( searchPageObject );\n savedData.innerHTML = finalJson;\n     /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
       },
       "output": [
         {
@@ -484,21 +545,38 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleCreatorIdjsHPkiKMIbezJzezUdXC": {
+        "path": "PQoIo",
+        "id": "search,0cell",
+        "sectionsHidden": [],
+        "options": {
+          "name": "Request"
+        },
+        "cellsHidden": false,
+        "javascriptEditorScroll": 208,
+        "openedRequestMenu": "Headers",
+        "openedMenu": "Request"
+      }
     }
   ],
   "info": [
     {
       "request": {
-        "url": "empty",
+        "url": "https://www.manhwas.net/manga/la-universidad-empieza-con-los-clubes",
         "method": "get",
         "headers": [
           {
             "key": "key",
-            "value": "value"
+            "value": "value",
+            "moduleCreatorHeaderisActive": true
+          },
+          {
+            "key": "",
+            "value": "",
+            "moduleCreatorHeaderisActive": true
           }
-        ],
-        "httpBody": null
+        ]
       },
       "extra": {
         "commands": [
@@ -520,9 +598,9 @@
         ]
       },
       "javascriptConfig": {
-        "removeJavascript": true,
-        "loadInWebView": false,
-        "javaScript": "function Info(request, extra, javascriptConfig, output) {this.request = request;this.extra = extra;this.javascriptConfig = javascriptConfig;this.output = output;}function ModuleRequest(url, method, headers, httpBody) {this.url = url;this.method = method;this.headers = headers;this.httpBody = httpBody;}function Extra(commands, extraInfo) {this.commands = commands;this.extraInfo = extraInfo;}function Commands(commandName, params) {this.commandName = commandName;this.params = params;}function JavascriptConfig(removeJavascript, loadInWebView, javaScript) {this.removeJavascript = removeJavascript;this.loadInWebView = loadInWebView;this.javaScript = javaScript;}function KeyValue(key, value) {this.key = key;this.value = value;}function Chapter(chapName, link, openInWebView) {this.chapName = chapName;this.link = link;this.openInWebView = openInWebView;}function Output(image, title, link, description, genres, field1, field2, field3, field4, chapters) {this.image = image;this.link = link;this.title = title;this.description = description;this.genres = genres;this.field1 = field1;this.field2 = field2;this.field3 = field3;this.field4 = field4;this.chapters = chapters;}function getStuff(array, match) {for (var x = 0; x < array.length; x++) {let data = array[x].innerText;if (data.includes(match)) {return data.replace(match, '').trim();}}}function getHtmlStuff(array, match) {for (var x = 0; x < array.length; x++) {let data = array[x].innerText;if (data.includes(match)) {return array[x];}}}var savedData = document.getElementById('ketsu-final-data');var parsedJson = JSON.parse(savedData.innerHTML);let emptyKeyValue = [new KeyValue('', '')];var output;var dataInfo = document.querySelector('article.anime-single');var type = dataInfo.querySelector('div.meta > span:nth-child(1)').innerText;var statuss = dataInfo.querySelector('div.meta > span:nth-child(2)').innerText;var desc = dataInfo.querySelector('p.sinopsis').innerText.trim();var image = new ModuleRequest(dataInfo.querySelector('div.thumb > figure > img').src, 'get', emptyKeyValue, null);var title = dataInfo.querySelector('h1.title').innerText.trim();var genres = [];var dataGenres = dataInfo.querySelectorAll('p.genres > span > a');dataGenres.forEach(gen => {genres.push(gen.innerText);});var chapters = [];var chapsList = document.querySelectorAll('ul.episodes-list > li > a');var cont = chapsList.length;chapsList.forEach(chap => {let link = new ModuleRequest(chap.href, 'get', emptyKeyValue, null);let chapName = 'Capítulo ' + cont;cont--;let chapter = new Chapter(chapName, link, false);chapters.push(chapter);});chapters.reverse();output = new Output(image, title, parsedJson.request, desc, genres, statuss, ':o', type, 'Eps: ' + chapsList.length, chapters);let infoPageObject = new Info(new ModuleRequest('', '', emptyKeyValue, null), new Extra([new Commands('', emptyKeyValue)], emptyKeyValue), new JavascriptConfig(false, false, ''), output);var finalJson = JSON.stringify(infoPageObject);savedData.innerHTML = finalJson;"
+        "removeJavascript": false,
+        "loadInWebView": true,
+        "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */      function Info ( request, extra, javascriptConfig, output ) {\n         this.request = request;\n         this.extra = extra;\n         this.javascriptConfig = javascriptConfig;\n         this.output = output;\n }\n\n function ModuleRequest ( url, method, headers, httpBody ) {\n         this.url = url;\n         this.method = method;\n         this.headers = headers;\n         this.httpBody = httpBody;\n }\n\n function Extra ( commands, extraInfo ) {\n         this.commands = commands;\n         this.extraInfo = extraInfo;\n }\n\n function Commands ( commandName, params ) {\n         this.commandName = commandName;\n         this.params = params;\n }\n\n function JavascriptConfig ( removeJavascript, loadInWebView, javaScript ) {\n         this.removeJavascript = removeJavascript;\n         this.loadInWebView = loadInWebView;\n         this.javaScript = javaScript;\n }\n\n function KeyValue ( key, value ) {\n         this.key = key;\n         this.value = value;\n }\n\n function Chapter ( chapName, link, openInWebView ) {\n         this.chapName = chapName;\n         this.link = link;\n         this.openInWebView = openInWebView;\n }\n\n function Output ( image, title, link, description, genres, field1, field2, field3, field4, chapters ) {\n         this.image = image;\n         this.link = link;\n         this.title = title;\n         this.description = description;\n         this.genres = genres;\n         this.field1 = field1;\n         this.field2 = field2;\n         this.field3 = field3;\n         this.field4 = field4;\n         this.chapters = chapters;\n }\n\n function getStuff ( array, match ) {\n         for ( var x = 0; x < array.length; x++ ) {\n                 let data = array[ x ].innerText;\n                 if ( data.includes( match ) ) {\n                         return data.replace( match, '' ).trim( );\n                 }\n         }\n }\n\n function getHtmlStuff ( array, match ) {\n         for ( var x = 0; x < array.length; x++ ) {\n                 let data = array[ x ].innerText;\n                 if ( data.includes( match ) ) {\n                         return array[ x ];\n                 }\n         }\n }\n var savedData = document.getElementById( 'ketsu-final-data' );\n var parsedJson = JSON.parse( savedData.innerHTML );\n let emptyKeyValue = [ new KeyValue( '', '' ) ];\n var output;\n var dataInfo = document.querySelector( 'article.anime-single' );\n var type = dataInfo.querySelector( 'div.meta > span:nth-child(1)' ).innerText;\n var statuss = dataInfo.querySelector( 'div.meta > span:nth-child(2)' ).innerText;\n var desc = dataInfo.querySelector( 'p.sinopsis' ).innerText.trim( );\n var image = new ModuleRequest( dataInfo.querySelector( 'div.thumb > figure > img' ).src, 'get', emptyKeyValue, null );\n var title = dataInfo.querySelector( 'h1.title' ).innerText.trim( );\n var genres = [ ];\n var dataGenres = dataInfo.querySelectorAll( 'p.genres > span > a' );\n dataGenres.forEach( gen => {\n         genres.push( gen.innerText );\n } );\n\n\n var chapters = [ ];\n var chapsList = document.querySelectorAll( 'ul.episodes-list > li > a' );\n var cont = chapsList.length;\n chapsList.forEach( chap => {\n         let link = new ModuleRequest( chap.href, 'get', emptyKeyValue, null );\n         let chapName = chap.querySelector('p > span').textContent.trim();\n         cont--;\n         let chapter = new Chapter( chapName, link, false );\n         chapters.push( chapter );\n } );\n chapters.reverse( );\n output = new Output( image, title, parsedJson.request, desc, genres, statuss, '', type, 'Eps: ' + chapsList.length, chapters );\n let infoPageObject = new Info( new ModuleRequest( '', '', emptyKeyValue, null ), new Extra( [ new Commands( '', emptyKeyValue ) ], emptyKeyValue ), new JavascriptConfig( false, false, '' ), output );\n var finalJson = JSON.stringify( infoPageObject );\n savedData.innerHTML = finalJson;\n\nwindow.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');  /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
       },
       "output": {
         "image": {
@@ -574,21 +652,38 @@
             }
           }
         ]
+      },
+      "moduleCreatorIdIKrTCkGRHXGBsCsHMMxY": {
+        "path": "vhIIb",
+        "id": "info,0cell",
+        "sectionsHidden": [],
+        "options": {
+          "name": "Request"
+        },
+        "cellsHidden": false,
+        "javascriptEditorScroll": 105,
+        "openedMenu": "Request",
+        "async": false
       }
     }
   ],
   "chapters": [
     {
       "request": {
-        "url": "empty",
+        "url": "https://www.manhwas.net/leer/la-universidad-empieza-con-los-clubes-1.00",
         "method": "get",
         "headers": [
           {
             "key": "key",
-            "value": "value"
+            "value": "value",
+            "moduleCreatorHeaderisActive": true
+          },
+          {
+            "key": "",
+            "value": "",
+            "moduleCreatorHeaderisActive": true
           }
-        ],
-        "httpBody": null
+        ]
       },
       "extra": {
         "commands": [
@@ -610,9 +705,9 @@
         ]
       },
       "javascriptConfig": {
-        "removeJavascript": true,
-        "loadInWebView": false,
-        "javaScript": " function Chapters(request, extra, javascriptConfig, output) {this.request = request;this.extra = extra;this.javascriptConfig = javascriptConfig;this.output = output;}function ModuleRequest(url, method, headers, httpBody) {this.url = url;this.method = method;this.headers = headers;this.httpBody = httpBody;}function Extra(commands, extraInfo) {this.commands = commands;this.extraInfo = extraInfo;}function Commands(commandName, params) {this.commandName = commandName;this.params = params;}function JavascriptConfig(removeJavascript, loadInWebView, javaScript) {this.removeJavascript = removeJavascript;this.loadInWebView = loadInWebView;this.javaScript = javaScript;}function KeyValue(key, value) {this.key = key;this.value = value;}function Output(videos, images, text) {this.videos = videos;this.images = images;this.text = text;}function Videos(needsResolver, rawVideo) {this.needsResolver = needsResolver;this.rawVideo = rawVideo;}function NeedsResolver(resolverIdentifier, link) {this.resolverIdentifier = resolverIdentifier;this.link = link;}function RawVideo(video) {this.video = video;}function Video(videoQuality, videoLink) {this.videoQuality = videoQuality;this.videoLink = videoLink;}function Text(text) {this.text = text;}var output = [];var savedData = document.getElementById('ketsu-final-data');var parsedJson = JSON.parse(savedData.innerHTML);var emptyKeyValue = [new KeyValue('Referer', parsedJson.request.url)];let images = document.getElementById('chapter_imgs').querySelectorAll('img');images.forEach(img => { output.push(new ModuleRequest(img.src, 'get', emptyKeyValue, null));});let emptyExtra = new Extra([new Commands('', emptyKeyValue)], emptyKeyValue);var chaptersObject = new Chapters(new ModuleRequest('', '', emptyKeyValue, null), emptyExtra, new JavascriptConfig(false, false, ''), new Output(null, output, null));var finalJson = JSON.stringify(chaptersObject);savedData.innerHTML = finalJson;"
+        "removeJavascript": false,
+        "loadInWebView": true,
+        "javaScript": "\n        try {\n\n             \n\n        var KETSU_ASYNC = true;\n        \n        /* JAVASCRIPT STARTS */  function Chapters(request, extra, javascriptConfig, output) {\n        this.request = request;\n        this.extra = extra;\n        this.javascriptConfig = javascriptConfig;\n        this.output = output;\n}\n\nfunction ModuleRequest(url, method, headers, httpBody) {\n        this.url = url;\n        this.method = method;\n        this.headers = headers;\n        this.httpBody = httpBody;\n}\n\nfunction Extra(commands, extraInfo) {\n        this.commands = commands;\n        this.extraInfo = extraInfo;\n}\n\nfunction Commands(commandName, params) {\n        this.commandName = commandName;\n        this.params = params;\n}\n\nfunction JavascriptConfig(removeJavascript, loadInWebView, javaScript) {\n        this.removeJavascript = removeJavascript;\n        this.loadInWebView = loadInWebView;\n        this.javaScript = javaScript;\n}\n\nfunction KeyValue(key, value) {\n        this.key = key;\n        this.value = value;\n}\n\nfunction Output(videos, images, text) {\n        this.videos = videos;\n        this.images = images;\n        this.text = text;\n}\n\nfunction Videos(needsResolver, rawVideo) {\n        this.needsResolver = needsResolver;\n        this.rawVideo = rawVideo;\n}\n\nfunction NeedsResolver(resolverIdentifier, link) {\n        this.resolverIdentifier = resolverIdentifier;\n        this.link = link;\n}\n\nfunction RawVideo(video) {\n        this.video = video;\n}\n\nfunction Video(videoQuality, videoLink) {\n        this.videoQuality = videoQuality;\n        this.videoLink = videoLink;\n}\n\nfunction Text(text) {\n        this.text = text;\n}\nvar output = [];\nvar savedData = document.getElementById('ketsu-final-data');\nvar parsedJson = JSON.parse(savedData.innerHTML);\nvar emptyKeyValue = [new KeyValue('Referer', parsedJson.request.url)];\nlet images = document.getElementById('chapter_imgs').querySelectorAll('img');\nimages.forEach(img => {\n        if (!img.src.includes('/discord') && img.src != '' && !img.src.includes('manhwas.net')) {\n                output.push(new ModuleRequest(img.src, 'get', emptyKeyValue, null));\n        }\n});\nlet emptyExtra = new Extra([new Commands('', emptyKeyValue)], emptyKeyValue);\nvar chaptersObject = new Chapters(new ModuleRequest('', '', emptyKeyValue, null), emptyExtra, new JavascriptConfig(false, false, ''), new Output(null, output, null));\nvar finalJson = JSON.stringify(chaptersObject);\nsavedData.innerHTML = finalJson;\nwindow.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');    /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
       },
       "output": {
         "moduleID": "234234823",
@@ -670,6 +765,18 @@
         "text": {
           "text": ""
         }
+      },
+      "moduleCreatorIdBhRDorRalneijKbMtcJB": {
+        "path": "HyGgw",
+        "id": "chapters,0cell",
+        "sectionsHidden": [],
+        "options": {
+          "name": "Request"
+        },
+        "cellsHidden": false,
+        "javascriptEditorScroll": 78,
+        "openedMenu": "Javascript",
+        "async": true
       }
     }
   ],
@@ -683,7 +790,30 @@
         "developer": "",
         "moduleID": "",
         "resolverVersion": 1,
-        "baseURL": ""
+        "baseURL": "",
+        "moduleCreatorIdPBdpkUZkdHLjrUfVLDUk": {
+          "path": "OmOtr",
+          "id": "moduleResolvers,0,resolverInfosection",
+          "sectionsHidden": [
+            "moduleCreatorIdLrzBAmNXbiXLbmWOTRuw"
+          ],
+          "options": {
+            "name": "Resolver Parameters",
+            "listName": "parameters"
+          },
+          "cellsHidden": false
+        },
+        "moduleCreatorIdFEbseIAzUHMCrelEMIzG": {
+          "path": "juoPE",
+          "id": "moduleResolvers,0,resolverInfocell",
+          "sectionsHidden": [
+            "moduleCreatorIdLrzBAmNXbiXLbmWOTRuw"
+          ],
+          "options": {
+            "name": "parameters"
+          },
+          "cellsHidden": false
+        }
       },
       "resolver": [
         {
@@ -720,7 +850,7 @@
           "javascriptConfig": {
             "removeJavascript": false,
             "loadInWebView": false,
-            "javaScript": ""
+            "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */            /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
           },
           "output": {
             "moduleID": "234234823",
@@ -740,9 +870,43 @@
                 }
               }
             ]
+          },
+          "moduleCreatorIdbzerADSErQMxiLZLCxre": {
+            "path": "TYjPj",
+            "id": "moduleResolvers,0,resolver,0cell",
+            "sectionsHidden": [
+              "moduleCreatorIdLrzBAmNXbiXLbmWOTRuw"
+            ],
+            "options": {
+              "name": "Request"
+            },
+            "cellsHidden": false
           }
         }
-      ]
+      ],
+      "moduleCreatorIdjmNyeQFsJozzvvnwXqlO": {
+        "path": "VJGlY",
+        "id": "moduleResolvers,0section",
+        "sectionsHidden": [
+          "moduleCreatorIdLrzBAmNXbiXLbmWOTRuw"
+        ],
+        "options": {
+          "name": "Resolver"
+        },
+        "cellsHidden": false
+      },
+      "moduleCreatorIdFDnfmEQnLnWMuLzrXaQv": {
+        "path": "resolver",
+        "id": "moduleResolvers,0,resolversection",
+        "sectionsHidden": [
+          "moduleCreatorIdLrzBAmNXbiXLbmWOTRuw"
+        ],
+        "options": {
+          "name": "Resolver Request",
+          "listName": "Request"
+        },
+        "cellsHidden": false
+      }
     }
   ],
   "responseCodeFunctions": [
@@ -786,10 +950,67 @@
           "javascriptConfig": {
             "removeJavascript": true,
             "loadInWebView": false,
-            "javaScript": ""
+            "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */            /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
+          },
+          "moduleCreatorIdHBJcWxQNlZQAthDjRKqM": {
+            "path": "Jcnqh",
+            "id": "responseCodeFunctions,0,functions,0cell",
+            "sectionsHidden": [
+              "moduleCreatorIdyvOlqoMwxqsJXdWUNLAc"
+            ],
+            "options": {
+              "name": "Request"
+            },
+            "cellsHidden": false
           }
         }
-      ]
+      ],
+      "moduleCreatorIdgEWFOiUShTPHbnceDzRx": {
+        "path": "ZmciL",
+        "id": "responseCodeFunctions,0section",
+        "sectionsHidden": [
+          "moduleCreatorIdyvOlqoMwxqsJXdWUNLAc"
+        ],
+        "options": {
+          "name": "Function"
+        },
+        "cellsHidden": false
+      },
+      "moduleCreatorIdLhSjkWqdGfsEiCQbwJCD": {
+        "path": "fIBaE",
+        "id": "responseCodeFunctions,0,section",
+        "sectionsHidden": [
+          "moduleCreatorIdyvOlqoMwxqsJXdWUNLAc"
+        ],
+        "options": {
+          "name": "Function Parameters",
+          "listName": "Parameters"
+        },
+        "cellsHidden": false
+      },
+      "moduleCreatorIdreaSWhNoOossMBsHUCGJ": {
+        "path": "zmPBV",
+        "id": "responseCodeFunctions,0,cell",
+        "sectionsHidden": [
+          "moduleCreatorIdyvOlqoMwxqsJXdWUNLAc"
+        ],
+        "options": {
+          "name": "Parameters"
+        },
+        "cellsHidden": false
+      },
+      "moduleCreatorIdsKBgeSNsAzDmEUBPBmkC": {
+        "path": "functions",
+        "id": "responseCodeFunctions,0,functionssection",
+        "sectionsHidden": [
+          "moduleCreatorIdyvOlqoMwxqsJXdWUNLAc"
+        ],
+        "options": {
+          "name": "Function Requests",
+          "listName": "Request"
+        },
+        "cellsHidden": false
+      }
     }
   ],
   "helperFunctions": [
@@ -833,10 +1054,148 @@
           "javascriptConfig": {
             "removeJavascript": true,
             "loadInWebView": false,
-            "javaScript": ""
+            "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */            /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
+          },
+          "moduleCreatorIdKWVAHvKwGaLwFsWHbVdL": {
+            "path": "xQpMf",
+            "id": "helperFunctions,0,functions,0cell",
+            "sectionsHidden": [
+              "moduleCreatorIdlBJxHIXTcySgnesuFRgT"
+            ],
+            "options": {
+              "name": "Request"
+            },
+            "cellsHidden": false
           }
         }
-      ]
+      ],
+      "moduleCreatorIdDKRBbVwskqpifvQYUMDm": {
+        "path": "aAEUJ",
+        "id": "helperFunctions,0section",
+        "sectionsHidden": [
+          "moduleCreatorIdlBJxHIXTcySgnesuFRgT"
+        ],
+        "options": {
+          "name": "Request"
+        },
+        "cellsHidden": false
+      },
+      "moduleCreatorIduKonulTdzicspCEjPbSU": {
+        "path": "qRCqW",
+        "id": "helperFunctions,0,section",
+        "sectionsHidden": [
+          "moduleCreatorIdlBJxHIXTcySgnesuFRgT"
+        ],
+        "options": {
+          "name": "Function Parameters",
+          "listName": "Parameters"
+        },
+        "cellsHidden": false
+      },
+      "moduleCreatorIdzTlgCyBDaglwgdmpXIQo": {
+        "path": "ZsWcj",
+        "id": "helperFunctions,0,cell",
+        "sectionsHidden": [
+          "moduleCreatorIdlBJxHIXTcySgnesuFRgT"
+        ],
+        "options": {
+          "name": "Parameters"
+        },
+        "cellsHidden": false
+      },
+      "moduleCreatorIdYXRpboQxjWArngrDrNgP": {
+        "path": "functions",
+        "id": "helperFunctions,0,functionssection",
+        "sectionsHidden": [
+          "moduleCreatorIdlBJxHIXTcySgnesuFRgT"
+        ],
+        "options": {
+          "name": "Function Requests",
+          "listName": "Request"
+        },
+        "cellsHidden": false
+      }
     }
-  ]
+  ],
+  "moduleCreatorGlobalOptions": {
+    "selected": "moduleCreatorIdBrjvKOuszCdpNZylBpSK",
+    "notesData": {
+      "openedNotes": [],
+      "activeNote": "oFwjzvDpdfxlaKQrGUwc",
+      "notes": {}
+    },
+    "hideViews": [],
+    "id": "pzNULRrqvHRdYXV",
+    "projectName": "ManhwasDotNet"
+  },
+  "moduleCreatorIdDgYBrBMOlyEJWYdQuEnm": {
+    "path": "mainPage",
+    "id": "mainPagesection",
+    "sectionsHidden": [],
+    "options": {
+      "name": "Main Page",
+      "listName": "Request"
+    },
+    "cellsHidden": false
+  },
+  "moduleCreatorIdHvQLfBWGGxqTUQELORvL": {
+    "path": "search",
+    "id": "searchsection",
+    "sectionsHidden": [],
+    "options": {
+      "name": "Search Page",
+      "listName": "Request"
+    },
+    "cellsHidden": false
+  },
+  "moduleCreatorIduLhfsOZqvWilaZeSkmrS": {
+    "path": "info",
+    "id": "infosection",
+    "sectionsHidden": [],
+    "options": {
+      "name": "Info Page",
+      "listName": "Request"
+    },
+    "cellsHidden": false
+  },
+  "moduleCreatorIdjKgDXAyrxKiyEqtXxEcc": {
+    "path": "chapters",
+    "id": "chapterssection",
+    "sectionsHidden": [],
+    "options": {
+      "name": "Chapters",
+      "listName": "Request"
+    },
+    "cellsHidden": false
+  },
+  "moduleCreatorIdLrzBAmNXbiXLbmWOTRuw": {
+    "path": "moduleResolvers",
+    "id": "moduleResolverssection",
+    "sectionsHidden": [],
+    "options": {
+      "name": "Resolvers",
+      "listName": "Resolver"
+    },
+    "cellsHidden": true
+  },
+  "moduleCreatorIdyvOlqoMwxqsJXdWUNLAc": {
+    "path": "responseCodeFunctions",
+    "id": "responseCodeFunctionssection",
+    "sectionsHidden": [],
+    "options": {
+      "name": "Response Code Funtions",
+      "listName": "Function"
+    },
+    "cellsHidden": true
+  },
+  "moduleCreatorIdlBJxHIXTcySgnesuFRgT": {
+    "path": "helperFunctions",
+    "id": "helperFunctionssection",
+    "sectionsHidden": [],
+    "options": {
+      "name": "Helper Functions",
+      "listName": "Request"
+    },
+    "cellsHidden": true
+  }
 }
