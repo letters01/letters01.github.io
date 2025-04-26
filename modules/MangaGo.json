@@ -1,0 +1,705 @@
+{
+    "moduleInfo": {
+        "moduleName": "Manga Go",
+        "moduleInitials": "MG",
+        "moduleDesc": "Modulo de Manga Go",
+        "developer": "Letters",
+        "moduleID": "10006",
+        "moduleImage": "https://pic1.mangapicgallery.com/images/ywz-1-7070.png?1",
+        "moduleVersion": 1,
+        "moduleLenguage": "ESP",
+        "moduleType": "Image",
+        "baseURL": "https://www.mangago.me/",
+        "moduleDeveloperSite": "https://letters01.github.io/",
+        "UpdateSite": "",
+        "preferedServer": "",
+        "preferedDownloadServer": "",
+        "blackListed": [""],
+        "moduleCreatorIduWLJOzgdIrdMknMVNFHm": {
+            "path": "OcgHR",
+            "id": "moduleInfosection",
+            "sectionsHidden": [],
+            "options": { "name": "Module Info", "listName": "Parameters" },
+            "cellsHidden": false
+        },
+        "moduleCreatorIdnDQcxoHfPOeEhVBDWYIT": {
+            "path": "DZhgY",
+            "id": "moduleInfocell",
+            "sectionsHidden": [],
+            "options": { "name": "Parameters" },
+            "cellsHidden": false
+        }
+    },
+    "global": {
+        "variables": [{ "key": "", "value": "" }],
+        "cookies": [{ "key": "", "value": "" }],
+        "headers": [{ "key": "", "value": "" }]
+    },
+    "mainPage": [
+        {
+            "request": {
+                "url": "https://www.mangago.me/",
+                "method": "get",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": "",
+                        "moduleCreatorHeaderisActive": true
+                    }
+                ]
+            },
+            "extra": {
+                "commands": [
+                    {
+                        "commandName": "",
+                        "params": [{ "key": "", "value": "" }]
+                    }
+                ],
+                "extraInfo": [{ "key": "", "value": "" }]
+            },
+            "javascriptConfig": {
+                "removeJavascript": true,
+                "loadInWebView": false,
+                "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */              const DefaultLayouts = {\n        ultraWideFull: 'ultraWideFull',\n        ultraWide: 'ultraWide',\n        wideFull: 'wideFull',\n        wide: 'wide',\n        wideStrechedFull: 'wideStrechedFull',\n        wideStrechedFullDouble: 'WideStrechedFullDouble',\n        wideStreched: 'wideStreched',\n        wideStrechedDouble: 'wideStrechedDouble',\n        wideStrechedFullList: 'wideStrechedFullList',\n        wideStrechedList: 'wideStrechedList',\n        doublets: 'doublets',\n        doubletsDouble: 'doubletsDouble',\n        doubletsFull: 'doubletsFull',\n        doubletsFullDouble: 'doubletsFullDouble',\n        doubletsConstant: 'doubletsConstant',\n        doubletsDoubleConstant: 'doubletsDoubleConstant',\n        doubletsFullConstant: 'doubletsFullConstant',\n        doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',\n        longDoublets: 'longDoublets',\n        longDoubletsDouble: 'longDoubletsDouble',\n        longDoubletsFull: 'longDoubletsFull',\n        longDoubletsFullDouble: 'longDoubletsFullDouble',\n        longDoubletsConstant: 'longDoubletsConstant',\n        longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',\n        longDoubletsFullConstant: 'longDoubletsFullConstant',\n        longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',\n        triplets: 'triplets',\n        tripletsDouble: 'tripletsDouble',\n        tripletsFull: 'tripletsFull',\n        tripletsFullDouble: 'tripletsFullDouble',\n        tripletsConstant: 'tripletsConstant',\n        tripletsDoubleConstant: 'tripletsDoubleConstant',\n        tripletsFullConstant: 'tripletsFullConstant',\n        tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',\n        longTriplets: 'longTriplets',\n        longTripletsDouble: 'longTripletsDouble',\n        longTripletsFull: 'longTripletsFull',\n        longTripletsFullDouble: 'longTripletsFullDouble',\n        longTripletsConstant: 'longTripletsConstant',\n        longTripletsDoubleConstant: 'longTripletsDoubleConstant',\n        longTripletsFullConstant: 'longTripletsFullConstant',\n        longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',\n        none: '',\n};\nconst CellDesings = {\n        Special1: 'Special1',\n        Special2: 'Special2',\n        Special3: 'Special3',\n        small1: 'small1',\n        small2: 'small2',\n        normal1: 'normal1',\n        normal2: 'normal2',\n        normal3: 'normal3',\n        normal4: 'normal4',\n        normal5: 'normal5',\n        normal6: 'normal6',\n        normal7: 'normal7',\n        wide1: 'wide1',\n        wide2: 'wide2',\n        wide3: 'wide3',\n        wide4: 'wide4',\n        wide5: 'wide5',\n        wide6: 'wide6',\n        wide7: 'wide7',\n        wide8: 'wide8',\n        wide9: 'wide9',\n        wide10: 'wide10',\n        wide11: 'wide11',\n};\nconst Paging = {\n        leading: 'leading',\n        centered: 'centered',\n        none: ''\n};\nconst Orientation = {\n        horizontal: 'horizontal',\n        vertical: 'vertical'\n};\n\nfunction MainPage ( request, extra, javascriptConfig, output ) {\n        this.request = request;\n        this.extra = extra;\n        this.javascriptConfig = javascriptConfig;\n        this.output = output;\n}\n\nfunction ModuleRequest ( url, method, headers, httpBody ) {\n        this.url = url;\n        this.method = method;\n        this.headers = headers;\n        this.httpBody = httpBody;\n}\n\nfunction Extra ( commands, extraInfo ) {\n        this.commands = commands;\n        this.extraInfo = extraInfo;\n}\n\nfunction Commands ( commandName, params ) {\n        this.commandName = commandName;\n        this.params = params;\n}\n\nfunction JavascriptConfig ( removeJavascript, loadInWebView, javaScript ) {\n        this.removeJavascript = removeJavascript;\n        this.loadInWebView = loadInWebView;\n        this.javaScript = javaScript;\n}\n\nfunction KeyValue ( key, value ) {\n        this.key = key;\n        this.value = value;\n}\n\nfunction Output ( cellDesing, orientation, defaultLayout, paging, section, layout, data ) {\n        this.cellDesing = cellDesing;\n        this.orientation = orientation;\n        this.defaultLayout = defaultLayout;\n        this.paging = paging;\n        this.section = section;\n        this.layout = layout;\n        this.data = data;\n}\n\nfunction Section ( sectionName, separator ) {\n        this.sectionName = sectionName;\n        this.separator = separator;\n}\n\nfunction Layout ( insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing ) {\n        this.insets = insets;\n        this.visibleCellsWidthS = visibleCellsWidthS;\n        this.visibleCellsWidthM = visibleCellsWidthM;\n        this.visibleCellsWidthL = visibleCellsWidthL;\n        this.visibleCellsHeight = visibleCellsHeight;\n        this.heightForVisibleCells = heightForVisibleCells;\n        this.cellSize = cellSize;\n        this.ratio = ratio;\n        this.constant = constant;\n        this.horizontalSpacing = horizontalSpacing;\n        this.verticalSpacing = verticalSpacing;\n}\n\nfunction Insets ( top, bottom, left, right ) {\n        this.top = top;\n        this.bottom = bottom;\n        this.left = left;\n        this.right = right;\n}\n\nfunction Size ( width, height ) {\n        this.width = width;\n        this.height = height;\n}\n\nfunction Ratio ( inRelation, number1, number2 ) {\n        this.inRelation = inRelation;\n        this.number1 = number1;\n        this.number2 = number2;\n}\n\nfunction Data ( image, title, description, field1, field2, field3, field4, isChapter, link ) {\n        this.image = image;\n        this.title = title;\n        this.description = description;\n        this.field1 = field1;\n        this.field2 = field2;\n        this.field3 = field3;\n        this.field4 = field4;\n        this.isChapter = isChapter;\n        this.link = link;\n}\n\nfunction quickData ( link, image, title, field1, field2, desc = 'unknown' ) {\n        return new Data( image, title, desc, field1, field2, 'unknown', 'unknown', false, link );\n}\n\nfunction shuffle ( a ) {\n        var j, x, i;\n        for ( i = a.length - 1; i > 0; i-- ) {\n                j = Math.floor( Math.random( ) * ( i + 1 ) );\n                x = a[ i ];\n                a[ i ] = a[ j ];\n                a[ j ] = x;\n        }\n        return a;\n}\nvar savedData = document.getElementById( 'ketsu-final-data' );\nvar parsedJson = JSON.parse( savedData.innerHTML );\nlet output = [ ];\nlet emptyKeyValue = [ new KeyValue( '', '' ) ];\nvar dataArray = [ ];\nvar dataArray2 = [ ];\nvar dataArray3 = [ ];\nvar dataArray4 = [ ];\nlet featuredManga = document.getElementById( 'recommand' ).querySelectorAll( 'ul > li  .img_wrapper' );\nfeaturedManga.forEach( ( featured ) => {\n        let title = featured.querySelector( '.rname_wrapper > span > a' )?.textContent || \"Sin titulo\";\n        let imageUrl = featured.querySelector( 'a > img' ).getAttribute('data-src') || '';\n        let image = new ModuleRequest(imageUrl, 'get', emptyKeyValue, null );\n        let chapNumber = featured.querySelector( '.rname_wrapper > a' )?.innerText.trim( ) || \"Capitulo desconocido\";\n       \n        var link = new ModuleRequest( featured.querySelector( '.rname_wrapper > span > a' ).href, 'get', emptyKeyValue, null );\n        dataArray.push( quickData( link, image, title, chapNumber, '', '' ) );\n} );\noutput.push( new Output( CellDesings.wide11, Orientation.horizontal, DefaultLayouts.wideFull, Paging.leading, new Section( 'Featured Manga', true ), null, dataArray ) );\n\nlet popularMangas = document.getElementById( 'toplist_panel' ).querySelectorAll( '.toplist > .row_2' );\npopularMangas.forEach( ( popular ) => {\n        let title = popular.querySelector( '.updates_chapter ul > li:nth-child(1) > h3 > a' ).title.replace('manga', '');\n        let image = new ModuleRequest( popular.querySelector( '.left.listimg a img' ).getAttribute('data-src'), 'get', emptyKeyValue, null );\n        let chamNumber = popular.querySelector( '.updates_chapter ul > li:nth-child(2) >  a' )?.textContent || 'Capitulo desconocido';\n        \n        var link = new ModuleRequest( popular.querySelector('.listimg a').href, 'get', emptyKeyValue, null );\n        dataArray2.push( quickData( link, image, title, chamNumber, 'desc' ) );\n} );\noutput.push( new Output( CellDesings.normal7, Orientation.horizontal, DefaultLayouts.doubletsDoubleConstant, Paging.leading, new Section( 'Popular Mangas', true ), null, dataArray2 ) );\n\nlet topYaoi = document.getElementById('top_genres').querySelectorAll('ul:nth-child(2) .updatesli');\ntopYaoi.forEach( ( yaoi ) => {\n        let title = yaoi.querySelector( '.title' ).textContent;\n        let image = new ModuleRequest( yaoi.querySelector( '.left a img' ).getAttribute('data-src'), 'get', emptyKeyValue, null );\n        var link = new ModuleRequest( yaoi.querySelector( '.title a' ).href, 'get', emptyKeyValue, null );\n        dataArray3.push( quickData( link, image, title, '', '', '' ) );\n} );\noutput.push( new Output( CellDesings.Special1, Orientation.horizontal, DefaultLayouts.doublets, Paging.leading, new Section( 'Yaoi Manga Top 5', false ), null, dataArray3 ) );\n/*\nlet ultimosMangas = document.querySelectorAll( '#app > main > div:nth-child(2) > div.col-12.col-lg-8.col-xl-9 > div:nth-child(8) > div > div > div > a' );\nultimosMangas.forEach( ( ultimo ) => {\n        let title = ultimo.querySelector( 'div.thumbnail-title h4' )?.title || 'Sin titulo';\n        let imageUrl = ultimo.querySelector( 'a > div > style' )?.innerHTML.split( \"'\" )[ 1 ]?.trim() || '';\n        imageUrl == '' ? imageUrl = 'https://i.pinimg.com/736x/7b/c3/12/7bc31265b1dbffbcce0f00fe2eb5e243.jpg' : '';\n        let image = new ModuleRequest( imageUrl, 'get', emptyKeyValue, null );\n        let field1 = ultimo.querySelector( 'div > .demography' )?.innerText.trim( ) || 'Sin demografia';\n        let field2 = ultimo.querySelector( 'div > .book-type' )?.innerText || 'Sin tipo';\n        var link = new ModuleRequest( ultimo.href, 'get', emptyKeyValue, null );\n        dataArray4.push( quickData( link, image, title, field1, field2 ) );\n} );\noutput.push( new Output( CellDesings.Special1, Orientation.horizontal, DefaultLayouts.doublets, Paging.leading, new Section( 'Ultimos Mangas', false ), null, dataArray4 ) );\n*/\nlet MainPageObject = new MainPage( new ModuleRequest( '', 'get', emptyKeyValue, null ), new Extra( [ new Commands( '', emptyKeyValue ) ], emptyKeyValue ), new JavascriptConfig( true, false, '' ), output );\nvar finalJson = JSON.stringify( MainPageObject );\nsavedData.innerHTML = finalJson;\n              /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
+            },
+            "output": [
+                {
+                    "cellDesing": "normal1",
+                    "orientation": "vertical",
+                    "defaultLayout": "wide",
+                    "paging": "",
+                    "section": { "sectionName": "", "separator": false },
+                    "layout": {
+                        "insets": {
+                            "top": 0,
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0
+                        },
+                        "visibleCellsWidthS": 2,
+                        "visibleCellsWidthM": 2,
+                        "visibleCellsWidthL": 2,
+                        "visibleCellsHeight": 2,
+                        "heightForVisibleCells": 400,
+                        "cellSize": { "width": 300, "height": 300 },
+                        "ratio": {
+                            "inRelation": "width",
+                            "number1": 1,
+                            "number2": 2
+                        },
+                        "constant": { "width": 1, "height": 2 },
+                        "horizontalSpacing": 0,
+                        "verticalSpacing": 0
+                    },
+                    "data": [
+                        {
+                            "image": {
+                                "url": "",
+                                "method": "get",
+                                "headers": [{ "key": "", "value": "" }],
+                                "httpBody": null
+                            },
+                            "title": "",
+                            "description": "",
+                            "field1": "",
+                            "field2": "",
+                            "field3": "",
+                            "field4": "",
+                            "moduleID": "",
+                            "isChapter": false,
+                            "link": {
+                                "url": "empty",
+                                "method": "get",
+                                "headers": [{ "key": "key", "value": "value" }],
+                                "httpBody": null
+                            }
+                        }
+                    ]
+                }
+            ],
+            "moduleCreatorIdneJnczGYcDuLIeoRilLR": {
+                "path": "WRfub",
+                "id": "mainPage,0cell",
+                "sectionsHidden": [],
+                "options": { "name": "Request" },
+                "cellsHidden": false,
+                "javascriptEditorScroll": 196,
+                "openedMenu": "Javascript"
+            }
+        }
+    ],
+    "search": [
+        {
+            "request": {
+                "url": "https://www.mangago.me/r/l_search/?name=sol&page=2",
+                "method": "get",
+                "headers": [
+                    {
+                        "key": "Accept-Encoding",
+                        "value": "gzip, deflate, br",
+                        "moduleCreatorHeaderisActive": true
+                    },
+                    {
+                        "key": "Accept-Language",
+                        "value": "es-419,es;q=0.9,en;q=0.8",
+                        "moduleCreatorHeaderisActive": true
+                    },
+                    {
+                        "key": "charset",
+                        "value": "utf8",
+                        "moduleCreatorHeaderisActive": true
+                    },
+                    {
+                        "key": "",
+                        "value": "",
+                        "moduleCreatorHeaderisActive": false
+                    }
+                ]
+            },
+            "separator": "+",
+            "extra": {
+                "commands": [
+                    {
+                        "commandName": "",
+                        "params": [{ "key": "", "value": "" }]
+                    }
+                ],
+                "extraInfo": [{ "key": "", "value": "" }]
+            },
+            "javascriptConfig": {
+                "removeJavascript": true,
+                "loadInWebView": false,
+                "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */              const DefaultLayouts = {\n        ultraWideFull: 'ultraWideFull',\n        ultraWide: 'ultraWide',\n        wideFull: 'wideFull',\n        wide: 'wide',\n        wideStrechedFull: 'wideStrechedFull',\n        wideStrechedFullDouble: 'WideStrechedFullDouble',\n        wideStreched: 'wideStreched',\n        wideStrechedDouble: 'wideStrechedDouble',\n        wideStrechedFullList: 'wideStrechedFullList',\n        wideStrechedList: 'wideStrechedList',\n        doublets: 'doublets',\n        doubletsDouble: 'doubletsDouble',\n        doubletsFull: 'doubletsFull',\n        doubletsFullDouble: 'doubletsFullDouble',\n        doubletsConstant: 'doubletsConstant',\n        doubletsDoubleConstant: 'doubletsDoubleConstant',\n        doubletsFullConstant: 'doubletsFullConstant',\n        doubletsFullDoubleConstant: 'doubletsFullDoubleConstant',\n        longDoublets: 'longDoublets',\n        longDoubletsDouble: 'longDoubletsDouble',\n        longDoubletsFull: 'longDoubletsFull',\n        longDoubletsFullDouble: 'longDoubletsFullDouble',\n        longDoubletsConstant: 'longDoubletsConstant',\n        longDoubletsDoubleConstant: 'longDoubletsDoubleConstant',\n        longDoubletsFullConstant: 'longDoubletsFullConstant',\n        longDoubletsFullDoubleConstant: 'longDoubletsFullDoubleConstant',\n        triplets: 'triplets',\n        tripletsDouble: 'tripletsDouble',\n        tripletsFull: 'tripletsFull',\n        tripletsFullDouble: 'tripletsFullDouble',\n        tripletsConstant: 'tripletsConstant',\n        tripletsDoubleConstant: 'tripletsDoubleConstant',\n        tripletsFullConstant: 'tripletsFullConstant',\n        tripletsFullDoubleConstant: 'tripletsFullDoubleConstant',\n        longTriplets: 'longTriplets',\n        longTripletsDouble: 'longTripletsDouble',\n        longTripletsFull: 'longTripletsFull',\n        longTripletsFullDouble: 'longTripletsFullDouble',\n        longTripletsConstant: 'longTripletsConstant',\n        longTripletsDoubleConstant: 'longTripletsDoubleConstant',\n        longTripletsFullConstant: 'longTripletsFullConstant',\n        longTripletsFullDoubleConstant: 'longTripletsFullDoubleConstant',\n        none: ''\n};\nconst CellDesings = {\n        Special1: 'Special1',\n        Special2: 'Special2',\n        Special3: 'Special3',\n        small1: 'small1',\n        small2: 'small2',\n        normal1: 'normal1',\n        normal2: 'normal2',\n        normal3: 'normal3',\n        normal4: 'normal4',\n        normal5: 'normal5',\n        normal6: 'normal6',\n        normal7: 'normal7',\n        wide1: 'wide1',\n        wide2: 'wide2',\n        wide3: 'wide3',\n        wide4: 'wide4',\n        wide5: 'wide5',\n        wide6: 'wide6',\n        wide7: 'wide7',\n        wide8: 'wide8',\n        wide9: 'wide9',\n        wide10: 'wide10',\n        wide11: 'wide11'\n};\nconst Paging = {\n        leading: 'leading',\n        centered: 'centered',\n        none: ''\n};\nconst Orientation = {\n        horizontal: 'horizontal',\n        vertical: 'vertical'\n};\n\nfunction Search ( request, extra, separator, javascriptConfig, output ) {\n        this.request = request;\n        this.extra = extra;\n        this.separator = separator;\n        this.javascriptConfig = javascriptConfig;\n        this.output = output;\n}\n\nfunction ModuleRequest ( url, method, headers, httpBody ) {\n        this.url = url;\n        this.method = method;\n        this.headers = headers;\n        this.httpBody = httpBody;\n}\n\nfunction Extra ( commands, extraInfo ) {\n        this.commands = commands;\n        this.extraInfo = extraInfo;\n}\n\nfunction Commands ( commandName, params ) {\n        this.commandName = commandName;\n        this.params = params;\n}\n\nfunction JavascriptConfig ( removeJavascript, loadInWebView, javaScript ) {\n        this.removeJavascript = removeJavascript;\n        this.loadInWebView = loadInWebView;\n        this.javaScript = javaScript;\n}\n\nfunction KeyValue ( key, value ) {\n        this.key = key;\n        this.value = value;\n}\n\nfunction Output ( cellDesing, orientation, defaultLayout, paging, section, layout, data ) {\n        this.cellDesing = cellDesing;\n        this.orientation = orientation;\n        this.defaultLayout = defaultLayout;\n        this.paging = paging;\n        this.section = section;\n        this.layout = layout;\n        this.data = data;\n}\n\nfunction Section ( sectionName, separator ) {\n        this.sectionName = sectionName;\n        this.separator = separator;\n}\n\nfunction Layout ( insets, visibleCellsWidthS, visibleCellsWidthM, visibleCellsWidthL, visibleCellsHeight, heightForVisibleCells, cellSize, ratio, constant, horizontalSpacing, verticalSpacing ) {\n        this.insets = insets;\n        this.visibleCellsWidthS = visibleCellsWidthS;\n        this.visibleCellsWidthM = visibleCellsWidthM;\n        this.visibleCellsWidthL = visibleCellsWidthL;\n        this.visibleCellsHeight = visibleCellsHeight;\n        this.heightForVisibleCells = heightForVisibleCells;\n        this.cellSize = cellSize;\n        this.ratio = ratio;\n        this.constant = constant;\n        this.horizontalSpacing = horizontalSpacing;\n        this.verticalSpacing = verticalSpacing;\n}\n\nfunction Insets ( top, bottom, left, right ) {\n        this.top = top;\n        this.bottom = bottom;\n        this.left = left;\n        this.right = right;\n}\n\nfunction Size ( width, height ) {\n        this.width = width;\n        this.height = height;\n}\n\nfunction Ratio ( inRelation, number1, number2 ) {\n        this.inRelation = inRelation;\n        this.number1 = number1;\n        this.number2 = number2;\n}\n\nfunction Data ( image, title, description, field1, field2, field3, field4, isChapter, link ) {\n        this.image = image;\n        this.title = title;\n        this.description = description;\n        this.field1 = field1;\n        this.field2 = field2;\n        this.field3 = field3;\n        this.field4 = field4;\n        this.isChapter = isChapter;\n        this.link = link;\n}\n\nfunction quickData ( link, image, title, field1, field2, field3 ) {\n        return new Data( image, title, field1, field2, field3, 'b', 'c', false, link );\n}\n\nfunction getHtmlStuff(array, match) {\n        for (var x = 0; x < array.length; x++) {\n                let data = array[x].innerText;\n                if (data.includes(match)) {\n                        return array[x];\n                }\n        }\n}\nvar savedData = document.getElementById( 'ketsu-final-data' );\nvar parsedJson = JSON.parse( savedData.innerHTML );\nlet output = [ ];\nlet emptyKeyValue = [ new KeyValue( '', '' ) ];\nvar dataArray = [ ];\nvar dataSearched = document.querySelectorAll( '#search_list div.box ' );\ndataSearched.forEach( ( search ) => {\n        let title = search.querySelector( 'div:nth-child(1) a' ).title;\n        let image = new ModuleRequest( search.querySelector( 'div:nth-child(1) a img' ).src, 'get', emptyKeyValue, null );\n        let field1 = \"Last chapter:\" + getHtmlStuff(search.querySelectorAll('div:nth-child(2) > div'), 'Latest Chapters').querySelector('a').textContent;\n        let field2 = getHtmlStuff(search.querySelectorAll('div:nth-child(2) > div'), 'Summary').textContent.replace('Summary:','');\n        let field3 = '';\n        var link = new ModuleRequest( search.querySelector( 'div:nth-child(1) a' ).href, 'get', emptyKeyValue, null );\n        dataArray.push( quickData( link, image, title, field2, field1, field3 ) );\n} );\nvar testLayout = new Layout( new Insets( 10, 10, 10, 10 ), 1, 2, 3, 1, 500, new Size( 400, 400 ), new Ratio( 'width', 4, 11 ), new Size( 0, 0 ), 10, 10 );\noutput.push( new Output( CellDesings.wide11, Orientation.vertical, DefaultLayouts.wideFull, Paging.none, new Section( '', false ), testLayout, dataArray ) );\nlet searchPageObject = new Search( new ModuleRequest( '', '', emptyKeyValue, null ), new Extra( [ new Commands( '', emptyKeyValue ) ], emptyKeyValue ), '', new JavascriptConfig( false, false, '' ), output );\nvar finalJson = JSON.stringify( searchPageObject );\nsavedData.innerHTML = finalJson;\n              /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
+            },
+            "output": [
+                {
+                    "cellDesing": "normal1",
+                    "orientation": "vertical",
+                    "defaultLayout": "wide",
+                    "paging": "",
+                    "section": { "sectionName": "", "separator": false },
+                    "layout": {
+                        "insets": {
+                            "top": 0,
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0
+                        },
+                        "visibleCellsWidthS": 2,
+                        "visibleCellsWidthM": 2,
+                        "visibleCellsWidthL": 2,
+                        "visibleCellsHeight": 2,
+                        "heightForVisibleCells": 400,
+                        "cellSize": { "width": 300, "height": 300 },
+                        "ratio": {
+                            "inRelation": "width",
+                            "number1": 1,
+                            "number2": 2
+                        },
+                        "constant": { "width": 1, "height": 2 },
+                        "horizontalSpacing": 0,
+                        "verticalSpacing": 0
+                    },
+                    "data": [
+                        {
+                            "image": {
+                                "url": "",
+                                "method": "get",
+                                "headers": [{ "key": "", "value": "" }],
+                                "httpBody": null
+                            },
+                            "title": "",
+                            "description": "",
+                            "field1": "",
+                            "field2": "",
+                            "field3": "",
+                            "field4": "",
+                            "moduleID": "",
+                            "isChapter": false,
+                            "link": {
+                                "url": "empty",
+                                "method": "get",
+                                "headers": [{ "key": "key", "value": "value" }],
+                                "httpBody": null
+                            }
+                        }
+                    ]
+                }
+            ],
+            "moduleCreatorIdBTIkthMuOSfoFknoxtSp": {
+                "path": "YmmRU",
+                "id": "search,0cell",
+                "sectionsHidden": [],
+                "options": { "name": "Request" },
+                "cellsHidden": false,
+                "javascriptEditorScroll": 207,
+                "openedMenu": "Javascript",
+                "openedRequestMenu": "Search Parameters"
+            }
+        }
+    ],
+    "info": [
+        {
+            "request": {
+                "url": "https://www.mangago.me/read-manga/2020_mgs/",
+                "method": "get",
+                "headers": [
+                    {
+                        "key": "key",
+                        "value": "value",
+                        "moduleCreatorHeaderisActive": true
+                    },
+                    {
+                        "key": "",
+                        "value": "",
+                        "moduleCreatorHeaderisActive": true
+                    }
+                ]
+            },
+            "extra": {
+                "commands": [
+                    {
+                        "commandName": "",
+                        "params": [{ "key": "", "value": "" }]
+                    }
+                ],
+                "extraInfo": [{ "key": "", "value": "" }]
+            },
+            "javascriptConfig": {
+                "removeJavascript": true,
+                "loadInWebView": false,
+                "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */             function Info(request, extra, javascriptConfig, output) {\n        this.request = request;\n        this.extra = extra;\n        this.javascriptConfig = javascriptConfig;\n        this.output = output;\n}\n\nfunction ModuleRequest(url, method, headers, httpBody) {\n        this.url = url;\n        this.method = method;\n        this.headers = headers;\n        this.httpBody = httpBody;\n}\n\nfunction Extra(commands, extraInfo) {\n        this.commands = commands;\n        this.extraInfo = extraInfo;\n}\n\nfunction Commands(commandName, params) {\n        this.commandName = commandName;\n        this.params = params;\n}\n\nfunction JavascriptConfig(removeJavascript, loadInWebView, javaScript) {\n        this.removeJavascript = removeJavascript;\n        this.loadInWebView = loadInWebView;\n        this.javaScript = javaScript;\n}\n\nfunction KeyValue(key, value) {\n        this.key = key;\n        this.value = value;\n}\n\nfunction Chapter(chapName, link, openInWebView) {\n        this.chapName = chapName;\n        this.link = link;\n        this.openInWebView = openInWebView;\n}\n\nfunction Output(image, title, link, description, genres, field1, field2, field3, field4, chapters) {\n        this.image = image;\n        this.link = link;\n        this.title = title;\n        this.description = description;\n        this.genres = genres;\n        this.field1 = field1;\n        this.field2 = field2;\n        this.field3 = field3;\n        this.field4 = field4;\n        this.chapters = chapters;\n}\n\nfunction getStuff(array, match) {\n        for (var x = 0; x < array.length; x++) {\n                let data = array[x].innerText;\n                if (data.includes(match)) {\n                        return data.replace(match, '').trim();\n                }\n        }\n}\n\nfunction getHtmlStuff(array, match) {\n        for (var x = 0; x < array.length; x++) {\n                let data = array[x].innerText;\n                if (data.includes(match)) {\n                        return array[x];\n                }\n        }\n}\nvar savedData = document.getElementById('ketsu-final-data');\nvar parsedJson = JSON.parse(savedData.innerHTML);\nlet emptyKeyValue = [new KeyValue('', '')];\nvar output;\n\nvar dataInfo = document.querySelectorAll('.article .manga_right .left > tbody > tr');\nvar type = 'Manga';\nvar stat = getHtmlStuff(dataInfo, 'Status').querySelector('td span:nth-child(2)').textContent;\ndocument.querySelector('.manga_summary').removeChild(document.querySelector('.manga_summary > font'));\nvar desc = document.querySelector('.manga_summary').textContent.trim();\nvar image = new ModuleRequest(document.querySelector('.cover img').src, 'get', emptyKeyValue, null);\nvar title = document.querySelector('.w-title').innerText;\nvar typeMang = 'Manga 2';\nvar genres = [];\ngetHtmlStuff(dataInfo, 'Genre').querySelectorAll('a').forEach(gen => genres.push(gen.textContent));\nvar chapters = [];\nvar infoChapters = document.getElementById('chapter_table').querySelectorAll('tr h4 a');\ninfoChapters.forEach(chap => {\n        let link = new ModuleRequest(chap.href, 'get', emptyKeyValue, undefined);\n        let chapName = chap.textContent.trim();\n        chapters.push(new Chapter(chapName, link, false));\n});\nlet lengthChaps = chapters.length;\nchapters.reverse();\noutput = new Output(image, title, parsedJson.request, desc, genres, stat, type, typeMang, 'Eps: ' + (lengthChaps), chapters);\nlet infoPageObject = new Info(new ModuleRequest('', '', emptyKeyValue, null), new Extra([new Commands('', emptyKeyValue)], emptyKeyValue), new JavascriptConfig(false, false, ''), output);\nvar finalJson = JSON.stringify(infoPageObject);\nsavedData.innerHTML = finalJson;\n             /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
+            },
+            "output": {
+                "image": {
+                    "url": "",
+                    "method": "get",
+                    "headers": [{ "key": "", "value": "" }],
+                    "httpBody": null
+                },
+                "link": {
+                    "url": "",
+                    "method": "get",
+                    "headers": [{ "key": "", "value": "" }],
+                    "httpBody": null
+                },
+                "title": "",
+                "description": "",
+                "moduleID": "",
+                "genres": [""],
+                "field1": "",
+                "field2": "",
+                "field3": "",
+                "field4": "",
+                "chapters": [
+                    {
+                        "chapName": "",
+                        "openInWebView": false,
+                        "link": {
+                            "url": "empty",
+                            "method": "get",
+                            "headers": [{ "key": "cascade", "value": "" }],
+                            "httpBody": null
+                        }
+                    }
+                ]
+            },
+            "moduleCreatorIdjJTbvCAfybvbudWBPCCI": {
+                "path": "YYvTy",
+                "id": "info,0cell",
+                "sectionsHidden": [],
+                "options": { "name": "Request" },
+                "cellsHidden": false,
+                "javascriptEditorScroll": 73,
+                "openedMenu": "Javascript"
+            }
+        }
+    ],
+    "chapters": [
+        {
+            "request": {
+                "url": "https://www.mangago.me/read-manga/the_mating_of_elves/uu/to_chapter-27/pg-1/",
+                "method": "GET",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": "",
+                        "moduleCreatorHeaderisActive": true
+                    }
+                ]
+            },
+            "extra": {
+                "commands": [
+                    {
+                        "commandName": "",
+                        "params": [{ "key": "", "value": "" }]
+                    }
+                ],
+                "extraInfo": [{ "key": "", "value": "" }]
+            },
+            "javascriptConfig": {
+                "removeJavascript": false,
+                "loadInWebView": false,
+                "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */ if (typeof (imgsrcs) != \"undefined\") {\n        var _0X2c9a16 = imgsrcs;\n        var key = CryptoJS.enc.Hex.parse(\"e11adc3949ba59abbe56e057f20f883e\");\n        var iv = CryptoJS.enc.Hex.parse(\"1234567890abcdef1234567890abcdef\");\n        var opinion = { iv: iv, padding: CryptoJS.pad.ZeroPadding };\n        _0X2c9a16 = CryptoJS.AES.decrypt(_0X2c9a16, key, opinion);\n        _0X2c9a16 = _0X2c9a16.toString(CryptoJS.enc.Utf8);\n        var $str = _0X2c9a16;\n        var $key = $str.charAt(19);\n        var $key = $key + $str.charAt(23);\n        var $key = $key + $str.charAt(31);\n        var $key = $key + $str.charAt(39);\n        $key = \"abcd\";\n        $str = _0X2c9a16.slice(0, 19);\n        $str += _0X2c9a16.slice(20, 23);\n        $str += _0X2c9a16.slice(24, 31);\n        $str += _0X2c9a16.slice(32, 39);\n        $str += _0X2c9a16.slice(40);\n        var $strlen = $str.length;\n        for ($j = 3; $j >= 2; $j--)\n                for ($i = $strlen - 1; ($i - ($key[$j] - '0')) >= 0; $i--) {\n                        if ($i % 2 != 0) {\n                                $temp = $str[$i - ($key[$j] - '0')];\n                                $str = replacePos($str, $i - ($key[$j] - '0'), $str[$i]);\n                                $str = replacePos($str, $i, $temp);\n                        }\n                }\n        for ($j = 1; $j >= 0; $j--)\n                for ($i = $strlen - 1; ($i - ($key[$j] - '0')) >= 0; $i--) {\n                        if ($i % 2 != 0) {\n                                $temp = $str[$i - ($key[$j] - '0')];\n                                $str = replacePos($str, $i - ($key[$j] - '0'), $str[$i]);\n                                $str = replacePos($str, $i, $temp);\n                        }\n                }\n        var d = _0X2c9a16;\n        var nisvc = false;\n        var _irs = d.split(\",\");\n        _eu = null;\n        if (d.indexOf(\",2\") > 0) {\n                jQuery(document).bind(\"contextmenu\", function (e) {\n                        return false;\n                });\n                nisvc = true;\n                if (_irs[_irs.length - 1] != \"2\")\n                        _eu = _irs[_irs.length - 1];\n        }\n        var dimgsrcs = new Array();\n        for (var i = 0; i < _irs.length - 1; i++) {\n                if (_irs[i].indexOf(\"cspiclink\") < 0)\n                        dimgsrcs[dimgsrcs.length] = _irs[i];\n        }\n        if (_irs[current_page - 1]) {\n                if (_irs[_irs.length - 1] == 1) {\n                        _irs.pop();\n                        if (!username) {\n                                var std = new Date().getTime();\n                                var etd = new Date().getTime();\n                                var se = etd - std;\n                                if (se > 30) {\n                                        jQuery.localStorage('history5', 1);\n                                } else {\n                                        _irs = _irs.sort(function (a, b) {\n                                                return (0.5 - Math.random());\n                                        });\n                                }\n                        }\n                }\n        }\n} else\n        var _irs = new Array();\nvar nimgsrc = _irs[current_page];\nif (history.pushState && history.replaceState) {\n        var zz = Math.floor(Math.random() * 1 + 1);\n        var zv = zzz = zz;\n        var isvc = true;\n        var nextpagefunc = 0;\n        var downe = hasTouch() ? \"touchstart\" : \"mousedown\";\n        var avc = true;\n        var ft = \"\";\n        var a2 = \"\";\n        var er = function (l, t, e, a2, isvc) {\n                if (nisvc) {\n                        var a = { l: l, t: t, it: (e.originalEvent.isTrusted + \"\")[0], p: current_page, c: cid, tp: _irs.length };\n                        if (t.indexOf(',c') > 0) {\n                                a['a2'] = a2;\n                                a['iv'] = isvc ? 1 : 0;\n                        }\n                        for (var i in e.originalEvent) {\n                                if (i.indexOf(\"client\") >= 0)\n                                        a[i.replace(\"client\", \"\")] = e.originalEvent[i];\n                        }\n                        avc = false;\n                        var _iaj = Math.floor(Math.random() * a[\"Y\"]);\n                        var er = cmdEncrypt(jQuery.toJSON(a));\n                        if (er) {\n                                jQuery.ajax({\n                                        type: \"post\",\n                                        url: \"/r/ajax/er/\",\n                                        async: false,\n                                        data: { er: er, aj: _iaj },\n                                        success: function (r) {\n                                                if (_iaj + parseInt(r) == a[\"Y\"])\n                                                        avc = true;\n                                        },\n                                        error: function () {\n                                        }\n                                });\n                        }\n                        if (!a[\"Y\"]) avc = false;\n                }\n        }\n        var updatePageContent = function (state) {\n                var needchangepic = false;\n                if ((!isvc || !avc) && nisvc && state.current_page >= 3) needchangepic = true;\n                __current_page = state.current_page;\n                current_page = state.current_page;\n                jQuery(\"#pic_container img,#pic_container span\").hide();\n                var _img = jQuery(\"#pic_container img.page\" + state.current_page);\n                var rt = Math.floor(Math.random() * (dimgsrcs.length - 0.1));\n                var randsrc = dimgsrcs[rt];\n                if (_img.length > 0 && _img.attr(\"src\").indexOf(\"cspiclink\") < 0) {\n                        if (needchangepic) {\n                                jQuery(\"#pic_container img.page\" + state.current_page).replaceWith(\"<img id='page\" + state.current_page + \"' class='page\" + state.current_page + \"' src='\" + randsrc + \"'>\");\n                        }\n                        jQuery(\"#pic_container img.page\" + state.current_page).show();\n                }\n                else {\n                        if (needchangepic) {\n                                jQuery(\"#pic_container span.page\" + state.current_page).replaceWith(\"<img id='page\" + state.current_page + \"' class='page\" + state.current_page + \"' src='\" + randsrc + \"'>\");\n                        }\n                        jQuery(\"#pic_container span.page\" + state.current_page).show();\n                }\n                document.title = manga_name + \" \" + chapter_name + \" Page \" + state.current_page + \" - Mangago\";\n                var next_url = jQuery(\"#dropdown-menu-page a\").eq(state.current_page).attr(\"href\");\n                var prev_url = jQuery(\"#dropdown-menu-page a\").eq(state.current_page - 2).attr(\"href\");\n                if (state.current_page == total_pages)\n                        next_url = WEB_ROOT + next_c_url;\n                jQuery(\"a.page\").text(\"Pg \" + state.current_page);\n                jQuery(\"a.prev_page\").attr(\"href\", prev_url);\n                jQuery(\"#pic_container,a.next_page\").attr(\"href\", next_url);\n                window.scrollTo(0, 0);\n                jQuery(\".social_panel>span\").html(\"\");\n                jQuery(\".bookmark a\").unbind(\"click\").click(function (e) {\n                        addBookmark(this, state.current_page);\n                });\n                jQuery(\".addtoalbum a\").unbind(\"click\").click(function (e) {\n                        addToAlbum(state.current_page);\n                });\n                jQuery(\".multi_pg_tip\").text(\"(\" + state.current_page + \"/\" + total_pages + \")\");\n                addHistory(current_page);\n        };\n        var addNimgsrc = function (page, hideloading) {\n                if (!_irs[page]) return;\n                if ((!isvc || !avc) && nisvc) {\n                        nimgsrc = dimgsrcs[Math.floor(Math.random() * (dimgsrcs.length - 0.1))];\n                } else\n                        nimgsrc = _irs[page];\n                if (nimgsrc) {\n                        var display = \"\";\n                        if (_multimode) {\n                                display = (nimgsrc.indexOf(\"cspiclink\") > 0 ? \"none\" : \"\");\n                        } else\n                                display = \"none\";\n                        var img = jQuery(\"<img />\", {\n                                id: \"page\" + (page + 1),\n                                class: \"page\" + (page + 1),\n                                style: \"display:\" + display,\n                                referrerPolicy: nimgsrc.indexOf(\"mangapicgallery\") > 0 ? \"no-referrer-when-downgrade\" : \"no-referrer\",\n                                width: jQuery.cookie(\"zoomin\") == 1 ? \"100%\" : \"\"\n                        });\n                        img.bind(\"load\", function () {\n                                var img = this;\n                                if (img.naturalWidth == img.naturalHeight && img.naturalWidth == 1600 && img.src.indexOf(\"blogspot\")) {\n                                        jQuery.post(\"/r/ajax/gpef/\", { mid: mid, cid: cid, src: img.src });\n                                }\n                                if (img.src.indexOf(\"cspiclink\") < 0 && img.id == 'page' + current_page)\n                                        jQuery(img).show();\n                                if (hideloading) {\n                                        jQuery(\"#pic_container span.loading\" + current_page).remove();\n                                }\n                                var renImg = function (img, width, height, id) {\n                                        var _imgkeys_ = new Array();\n                                        _imgkeys_[\"60a2b0ed56cd458c4633d04b1b76b7e9\"] = \"18a72a69a64a13a1a43a3aa42a23a66a26a19a51a54a78a34a17a31a35a15a58a29a61a48a73a74a44a52a60a24a63a20a32a7a45a53a75a55a62a59a41a76a68a2a36a21a10a38a33a71a40a67a22a4a50a80a65a27a37a47a70a14a28a16a6a56a30a57a5a11a79a9a77a46a39a25a49a8a12\";\n                                        _imgkeys_[\"400df5e8817565e28b2e141c533ed7db\"] = \"61a74a10a45a3a37a72a22a57a39a25a56a52a29a70a60a67a41a63a55a27a28a43a18a5a9a8a40a17a48a44a79a38a47a32a73a4a6a13a34a33a49a2a42a50a76a54a36a35a14a58a7a69a46a16a30a21a11aa51a53a77a26a31a1a19a20a80a24a62a68a59a66a75a12a64a78a71a15a65a23\";\n                                        _imgkeys_[\"84ba0d8098f405b14f4dbbcc04c93bac\"] = \"61a26a35a16a55a10a72a37a2a60a66a65a33a44a7a28a70a62a32a56a30a40a58a15a74a47aa36a78a75a11a6a77a67a39a23a9a31a64a59a13a24a80a14a38a45a21a63a19a51a17a34a50a46a5a29a73a8a57a69a48a68a49a71a41a12a52a18a79a76a54a42a22a4a1a3a53a20a25a43a27\";\n                                        _imgkeys_[\"56665708741979f716e5bd64bf733c33\"] = \"23a7a41a48a57a27a69a36a76a62a40a75a26a2a51a6a10a65a43a24a1aa20a71a28a30a13a38a79a78a72a14a49a55a56a58a25a70a12a80a3a66a11a39a42a17a15a54a45a34a74a31a8a61a46a73a63a22a64a19a77a50a9a59a37a68a52a18a32a16a33a60a67a21a44a53a5a35a4a29a47\";\n                                        _imgkeys_[\"a67e15ed870fe4aab0a502478a5c720f\"] = \"8a12a59a52a24a13a37a21a55a56a41a71a65a43a40a66a11a79a67a44a33a20a72a2a31a42a29a34a58a60a27a48a28a15a35a51a76a80a0a63a69a53a39a46a64a50a75a1a57a9a62a74a18a16a73a14a17a6a19a61a23a38a10a3a32a26a36a54a4a30a45a47a70a22a7a68a49a77a5a25a78\";\n                                        _imgkeys_[\"b6a2f75185754b691e4dfe50f84db57c\"] = \"47a63a76a58a37a4a56a21a1a48a62a2a36a44a34a42a23a9a60a72a11a74a70a20a77a16a15a35a69a0a55a46a24a6a32a75a68a43a41a78a31a71a52a33a67a25a80a30a5a28a40a65a39a14a29a64a3a53a49a59a12a66a38a27a79a45a18a22a8a61a50a17a51a10a26a13a57a19a7a54a73\";\n                                        _imgkeys_[\"db99689c5a26a09d126c7089aedc0d86\"] = \"57a31a46a61a55a41a26a2a39a24a75a4a45a13a23a51a15a8a64a37a72a34a12a3a79a42a80a17a62a49a19a77a48a68a78a65a14a10a29a16a20a76a38a36a54a30a53a40a33a21a44a22a32a5a1a7a70a67a58a0a71a74a43a66a6a63a35a56a73a9a27a25a59a47a52a11a50a18a28a60a69\";\n                                        _imgkeys_[\"37abcb7424ce8df47ccb1d2dd9144b49\"] = \"67a45a39a72a35a38a61a11a51a60a13a22a31a25a75a30a74a43a69a50a6a26a16a49a77a68a59a64a17a56a18a1a10a54a44a62a53a80a5a23a48a32a29a79a24a70a28a58a71a3a52a42a55a9a14a36a73a34a2a27a57a0a21a41a33a37a76a8a40a65a7a20a12a19a47a4a78a15a63a66a46\";\n                                        _imgkeys_[\"874b83ba76a7e783d13abc2dabc08d76\"] = \"26a59a42a43a4a20a61a28a12a64a37a52a2a77a34a13a46a74a70a0a44a29a73a66a55a38a69a67a62a9a63a6a54a79a21a33a8a58a40a47a71a49a22a50a57a78a56a25a17a15a36a16a48a32a5a10a14a80a24a72a76a45a3a53a23a41a60a11a65a19a27a51a68a35a31a1a75a39a30a7a18\";\n                                        _imgkeys_[\"d320d2647d70c068b89853e1a269c609\"] = \"77a38a53a40a16a3a20a18a63a9a24a64a50a61a45a59a27a37a8a34a11a55a79a13a47a68a12a22a46a33a1a69a52a54a31a23a62a43a0a2a35a28a57a36a51a78a70a5a32a75a41a30a4a80a19a21a42a71a49a10a56a74a17a7a25a6a14a73a29a44a48a39a60a58a15a66a67a72a65a76a26\";\n                                        _imgkeys_[\"930b87ad89c2e2501f90d0f0e92a6b97\"] = \"9a29a49a67a62a40a28a50a64a77a46a31a16a73a14a45a51a44a7a76a22a78a68a37a74a69a25a65a41a11a52aa18a36a10a38a12a15a2a58a48a8a27a75a20a4a80a61a55a42a13a43a47a39a35a60a26a30a63a66a57a33a72a24a71a34a23a3a70a54a56a32a79a5a21a6a59a53a17a1a19\";\n                                        _imgkeys_[\"c587e77362502aaedad5b7cddfbe3a0d\"] = \"50aa59a70a68a30a56a10a49a43a45a29a23a28a61a15a40a71a14a44a32a34a17a26a63a76a75a33a74a12a11a21a67a31a19a80a7a64a8a3a51a53a38a18a6a42a27a9a52a20a41a60a1a22a77a16a54a47a79a24a78a2a46a37a73a65a36a35a39a5a4a25a72a13a62a55a57a58a69a66a48\";\n                                        _imgkeys_[\"1269606c6c3d8bb6508426468216d6b1\"] = \"49a15a0a60a14a26a34a69a61a24a35a4a77a80a70a40a39a6a68a17a41a56a28a46a79a16a21a1a37a42a44a58a78a18a52a73a32a9a12a50a8a13a20a19a67a36a45a75a48a10a65a7a38a66a3a2a43a27a29a31a72a74a55a23a54a22a59a57a11a62a47a53a30a5a64a25a76a71a51a33a63\";\n                                        _imgkeys_[\"33a3b21bb2d14a09d15f995224ae4284\"] = \"30a59a35a34a42a8a10a56a70a64a48a69a26a18a6a16a54a24a73a79a68a33a32a2a63a53a31a14a17a57a41a80a76a40a60a12a43a29a39a4a77a58a66a36a38a52a13a19a0a75a28a55a25a61a71a11a67a49a23a45a5a15a1a50a51a9a44a47a65a74a72a27a7a37a46a20a22a62a78a21a3\";\n                                        _imgkeys_[\"9ae6640761b947e61624671ef841ee78\"] = \"62a25a21a75a42a61a73a59a23a19a66a38a71a70a6a55a3a16a43a32a53a37a41a28a49a63a47a17a7a30a78a46a20a67a56a79a65a14a69a60a8a52a22a9a24a2a4a13a36a27a0a18a33a12a44a5a76a26a29a40a1a11a64a48a39a51a80a72a68a10a58a35a77a54a34a74a57a31a50a45a15\";\n                                        _imgkeys_[\"f4ab0903149b5d94baba796a5cf05938\"] = \"40a37a55a73a18a42a15a59a50a13a22a63a52a58a6a80a47a17a38a71a74a70a30a11a10a19a0a31a36a21a51a68a1a3a14a66a45a2a79a7a76a75a8a67a20a78a25a69a43a28a35a60a4a23a65a54a34a9a5a39a27a57a26a33a12a24a46a72a56a44a49a61a64a29a53a48a32a62a41a16a77\";\n                                        _imgkeys_[\"f5baf770212313f5e9532ec5e6103b61\"] = \"55a69a78a75a38a25a20a60a6a80a46a5a48a18a23a24a17a67a64a70a63a57a22a10a49a19a8a16a11a12a61a76a34a27a54a73a44a0a56a3a15a29a28a13a4a2a7a77a74a35a37a26a30a58a9a71a50a1a43a79a47a32a14a53a52a66a72a59a68a31a42a45a62a51a40a39a33a65a41a36a21\";\n                                        _imgkeys_[\"e2169a4bfd805e9aa21d3112d498d68c\"] = \"54a34a68a69a26a20a66a1a67a74a22a39a63a70a5a37a75a15a6a14a62a50a46a35a44a45a28a8a40a25a29a76a51a77a17a47a0a42a2a9a48a27a13a64a58a57a18a30a80a23a61a36a60a59a71a32a7a38a41a78a12a49a43a79a24a31a52a19a3a53a72a10a73a11a33a16a4a55a65a21a56\";\n                                        _imgkeys_[\"1796550d20f64decb317f9b770ba0e78\"] = \"37a55a39a79a2a53a75a1a30a32a3a13a25a49a45a5a60a62a71a78a63a24a27a33a19a64a67a57a0a8a54a9a41a61a50a73a7a65a58a51a15a14a43a4a35a77a68a72a34a80a22a17a48a10a70a46a40a28a20a74a52a23a38a76a42a18a66a11a59a6a69a31a56a16a47a21a12a44a36a29a26\";\n                                        _imgkeys_[\"bf53be6753a0037c6d80ca670f5d12d5\"] = \"55a41a18a19a4a13a36a12a56a69a64a80a30a39a57a50a48a26a46a73a17a52a49a66a11a25a61a51a68a24a70a7a67a53a43a8a29a75a65a42a38a58a9a28a0a78a54a31a22a5a15a3a79a77a59a23a45a40a47a44a6a2a1a35a14a62a63a76a20a16a32a21a71a10a74a60a34a37a33a72a27\";\n                                        _imgkeys_[\"6c41ff7fbed622aa76e19f3564e5d52a\"] = \"40a3a13a59a68a34a66a43a67a14a26a46a8a24a33a73a69a31a2a57a10a51a62a77a74a41a47a35a64a52a15a53a6a80a76a50a28a75a56a79a17a45a25a49a48a65a78a27a9a63a12a55a32a21a58a38a0a71a44a30a61a36a16a23a20a70a22a37a4a19a7a60a11a5a18a39a1a54a72a29a42\";\n                                        _m = \"The following content is intended for mature audiences and may contain sexual themes, gore, violence and/or strong language. Discretion is advised.\";\n                                        var c = document.createElement('canvas');\n                                        c.toDataURL = function () { };\n                                        c.getImageData = function () { };\n                                        c._ow = width;\n                                        c._oh = height;\n                                        c.width = width;\n                                        c.height = height;\n                                        jQuery(c).hide();\n                                        jQuery(\"#pic_container span.\" + id).append(c);\n                                        var ctx = c.getContext(\"2d\");\n                                        var key = \"18a72a69a64a13a1a43a3aa42a23a66a26a19a51a54a78a34a17a31a35a15a58a29a61a48a73a74a44a52a60a24a63a20a32a7a45a53a75a55a62a59a41a76a68a2a36a21a10a38a33a71a40a67a22a4a50a80a65a27a37a47a70a14a28a16a6a56a30a57a5a11a79a9a77a46a39a25a49a8a12\";\n                                        for (mk in _imgkeys_) {\n                                                if (img.src.indexOf(mk) > 0) {\n                                                        key = _imgkeys_[mk];\n                                                }\n                                        }\n                                        if (img.src.indexOf(\"5ce6f0e2e1ca981a5e24996a3b9e46f4\") > 0 || img.src.indexOf(\"522283049908fa5c1e74f903238e13a8\") > 0) {\n                                                var _0X2c9a16 = img.src.indexOf(\"5ce6f0e2e1ca981a5e24996a3b9e46f4\") > 0 ? \"a63422aa9935aa5236a4a2a27254aa21a4146aa36835aa0213a1aa9134aa3531aa0851aa4655aa4943aa0522aa1311aa8227aa9373aa3961a4aa4751aa5461aa7776aa5634aa8a5735aa3a2675aa9a6578a7aa2864aa0748aa0021aa1177aa8153aa4076aa1642aa3a0617aa4069a2aa8724aa5627a6\" : \"a29247aa2a2a8367aa943332aa4032a1a9024aa37226aa1945aa7546aa2912aa1063aa1236aa7457a0a5aa3563aa5a1083aa9212aa6733aa6a9146aa9a3771aa1325a7aa6447aa3876a4aa6835aa5251aa6464a1aa8055aa1171aa7075aa8842aa5427aa4574aa3312aa8014aa0656aa8661aa4517a5\";\n                                                var $str = _0X2c9a16;\n                                                var $key = $str.charAt(19);\n                                                $key = $key + $str.charAt(23);\n                                                $key = $key + $str.charAt(31);\n                                                $key = $key + $str.charAt(39);\n                                                $str = _0X2c9a16.slice(0, 19);\n                                                $str += _0X2c9a16.slice(20, 23);\n                                                $str += _0X2c9a16.slice(24, 31);\n                                                $str += _0X2c9a16.slice(32, 39);\n                                                $str += _0X2c9a16.slice(40);\n                                                var $strlen = $str.length;\n                                                for ($j = 3; $j >= 2; $j--)\n                                                        for ($i = $strlen - 1; ($i - ($key[$j] - '0')) >= 0; $i--) {\n                                                                if ($i % 2 != 0) {\n                                                                        $temp = $str[$i - ($key[$j] - '0')];\n                                                                        $str = replacePos($str, $i - ($key[$j] - '0'), $str[$i]);\n                                                                        $str = replacePos($str, $i, $temp);\n                                                                }\n                                                        }\n                                                for ($j = 1; $j >= 0; $j--)\n                                                        for ($i = $strlen - 1; ($i - ($key[$j] - '0')) >= 0; $i--) {\n                                                                if ($i % 2 != 0) {\n                                                                        $temp = $str[$i - ($key[$j] - '0')];\n                                                                        $str = replacePos($str, $i - ($key[$j] - '0'), $str[$i]);\n                                                                        $str = replacePos($str, $i, $temp);\n                                                                }\n                                                        }\n                                                key = $str;\n                                        }\n                                        key = key.split(\"a\");\n                                        var widthnum = heightnum = 9;\n                                        var sm_width = width / widthnum;\n                                        var sm_height = height / heightnum;\n                                        var _y, dst_y, dst_x, src_y, src_x;\n                                        for (var i = 0; i < widthnum * heightnum; i++) {\n                                                _y = Math.floor(key[i] / heightnum);\n                                                dst_y = _y * sm_height;\n                                                dst_x = (key[i] - _y * widthnum) * sm_width;\n                                                _y = Math.floor(i / widthnum);\n                                                src_y = _y * sm_height;\n                                                src_x = (i - _y * widthnum) * sm_width;\n                                                ctx.drawImage(img, src_x, src_y, sm_width, sm_height, dst_x, dst_y, sm_width, sm_height);\n                                        }\n                                        if (_eu) {\n                                                ctx.font = \"10px Georgia\";\n                                                ctx.fillStyle = \"#ccc\"\n                                                ctx.fillText(_eu, 1, Math.floor(Math.random() * (height - 20) + 1));\n                                        }\n                                        if (jQuery.cookie(\"zoomin\") == 1) {\n                                                var cc = document.createElement(\"canvas\");\n                                                cc.width = jQuery(\"#pic_container\").width();\n                                                cc.height = cc.width * c.height / c.width;\n                                                cc._ow = c.width;\n                                                cc._oh = c.height;\n                                                cc.getContext(\"2d\").drawImage(c, 0, 0, c.width, c.height, 0, 0, cc.width, cc.height);\n                                                jQuery(c).parents(\"span\").append(cc);\n                                                jQuery(c).remove();\n                                                c = cc;\n                                        }\n                                        jQuery(c).show();\n                                        if (_multimode || id == \"page\" + current_page)\n                                                jQuery(c).parent().show();\n                                        jQuery(img).remove();\n                                }\n                                if (!(img.src.indexOf(\"cspiclink\") < 0 || !jQuery(img).attr(\"_fixnewc\") || jQuery(img).attr(\"crossorigin\"))) {\n                                        var _id = jQuery(\"#pic_container span.\" + jQuery(img).attr(\"class\") + \" canvas\").length;\n                                        if (_id == 0) {\n                                                _id = jQuery(img).attr(\"class\");\n                                                if (img.naturalWidth && img.naturalHeight) {\n                                                        renImg(img, img.naturalWidth, img.naturalHeight, _id);\n                                                } else {\n                                                        imgReady(img.src, function () {\n                                                                var width = this.width;\n                                                                var height = this.height;\n                                                                renImg(img, width, height, _id);\n                                                        });\n                                                }\n                                        }\n                                }\n                                if (_multimode)\n                                        addNimgsrc(page + 1);\n                        }).bind(\"error\", function () {\n                                this.src = this.src + \"?1\";\n                                jQuery(this).unbind(\"error\");\n                                if (_multimode)\n                                        addNimgsrc(page + 1);\n                        });\n                        var _addnimg = true;\n                        if (_multimode)\n                                _addnimg = !document.getElementById(\"page\" + (page + 1)) && page < total_pages;\n                        if (_addnimg) {\n                                if (_multimode)\n                                        jQuery(\"<span style='display:block;z-index:-1;' class='loading\" + (page + 1) + \"'><font>(\" + (page + 1) + \"/\" + total_pages + \")</font><img class='loading' src='/images/ajax-loader2.gif'></span>\").appendTo('#pic_container');\n                                jQuery(\"<span id=\" + jQuery(img).attr(\"id\") + \" class='\" + jQuery(img).attr(\"class\") + \" wsp' style='display:none;z-index:1'></span>\").appendTo(\"#pic_container\").click(function () {\n                                        if (_multimode)\n                                                addToAlbum(page + 1);\n                                });\n                                if (nimgsrc.indexOf(\"cspiclink\") < 0) {\n                                        img.appendTo('#pic_container').click(function () {\n                                                if (_multimode)\n                                                        addToAlbum(page + 1);\n                                        });\n                                        if (!_multimode && page == current_page - 1)\n                                                img.show();\n                                } else {\n                                        img.attr(\"_fixnewc\", 1);\n                                }\n                                if ((nimgsrc.indexOf(\"newpiclink\") || nimgsrc.indexOf(\"cspiclink\"))) {\n                                        var nn = nimgsrc.split(\"/\");\n                                        var fname = nn.pop();\n                                        if (fname.charAt(6) == \"z\") {\n                                                var oname = fname.substring(0, 6) + fname.substring(7);\n                                                nimgsrc = nimgsrc.replace(fname, oname);\n                                        }\n                                }\n                                img.attr(\"src\", nimgsrc);\n                        }\n                }\n        };\n        var pageclickfun = function (i, e) {\n                if (e.type != \"click\") {\n                        if (zzz == 2) {\n                                if (e.type == \"mouseup\")\n                                        isvc = true;\n                                else\n                                        isvc = false;\n                        }\n                        if (zzz == 1) {\n                                if (e.type == downe) {\n                                        isvc = true;\n                                        nextpagefunc = new Date().getTime();\n                                }\n                                else\n                                        isvc = false;\n                        }\n                        ft = e.type;\n                        return true;\n                } else {\n                        if (nextpagefunc > 0) {\n                                a2 = new Date().getTime() - nextpagefunc;\n                                if (a2 < 5)\n                                        isvc = false;\n                                else\n                                        isvc = true;\n                                nextpagefunc = 0;\n                        } else {\n                                if (typeof (ft[0]) == 'undefined' && downe == 'touchstart')\n                                        isvc = true;\n                                else\n                                        isvc = false;\n                        }\n                        if (isvc) {\n                                if (e.originalEvent.isTrusted === false) {\n                                        isvc = false;\n                                } else {\n                                        if (e.originalEvent.isTrusted) {\n                                                e.originalEvent.isTrusted = 2;\n                                                if (e.originalEvent.isTrusted == 2)\n                                                        isvc = false;\n                                                else\n                                                        isvc = true;\n                                        }\n                                }\n                        }\n                }\n                jQuery(\".dropdown-toggle.page\").click();\n                if (fixskippage(e)) {\n                        e.preventDefault();\n                        return false;\n                }\n                next_page = i + 1;\n                if (!document.getElementById(\"page\" + next_page)) {\n                        addNimgsrc(i);\n                }\n                if (next_page > total_pages) return true;\n                var next_img = document.getElementById(\"page\" + next_page);\n                if (next_img) {\n                        var data = { src: next_img.src, current_page: next_page };\n                        next_url = jQuery(\"#dropdown-menu-page a\").eq(i).attr(\"href\");\n                        history.pushState(data, null, next_url);\n                        er(\"p\", ft[0] + \",\" + e.type[0], e, a2, isvc);\n                        updatePageContent(data);\n                        __loaded = current_page;\n                        if (!document.getElementById(\"page\" + (next_page + 1)) && next_page < total_pages) {\n                                addNimgsrc(next_page);\n                        }\n                        ft = \"\";\n                        current_page = next_page;\n                        isvc = true;\n                        e.preventDefault();\n                        return false;\n                }\n                return true;\n        };\n        jQuery(\"#dropdown-menu-page a\").each(function (i, ele) {\n                if (zzz == 1)\n                        jQuery(ele).on(downe + \" click\", function (e) { pageclickfun(i, e) });\n                if (zzz == 2)\n                        jQuery(ele).on(\"mouseup click\", function (e) { pageclickfun(i, e) });\n        });\n        var prevpagefun = function (e) {\n                if (e.type != \"click\") {\n                        if (zv == 2) {\n                                if (e.type == \"mouseup\")\n                                        isvc = true;\n                                else\n                                        isvc = false;\n                        }\n                        if (zv == 1) {\n                                if (e.type == downe) {\n                                        isvc = true;\n                                        nextpagefunc = new Date().getTime();\n                                }\n                                else\n                                        isvc = false;\n                        }\n                        ft = e.type;\n                        return true;\n                } else {\n                        if (nextpagefunc > 0) {\n                                a2 = new Date().getTime() - nextpagefunc;\n                                if (a2 < 5)\n                                        isvc = false;\n                                else\n                                        isvc = true;\n                                nextpagefunc = 0;\n                        } else {\n                                if (typeof (ft[0]) == 'undefined' && downe == 'touchstart')\n                                        isvc = true;\n                                else\n                                        isvc = false;\n                        }\n                        if (isvc) {\n                                if (e.originalEvent.isTrusted === false) {\n                                        isvc = false;\n                                } else {\n                                        if (e.originalEvent.isTrusted) {\n                                                e.originalEvent.isTrusted = 2;\n                                                if (e.originalEvent.isTrusted == 2)\n                                                        isvc = false;\n                                                else\n                                                        isvc = true;\n                                        }\n                                }\n                        }\n                }\n                if (fixskippage(e)) {\n                        e.preventDefault();\n                        return false;\n                }\n                next_page = current_page - 1;\n                if (next_page < 1) return true;\n                if (!document.getElementById(\"page\" + next_page)) {\n                        addNimgsrc(current_page - 2);\n                }\n                var next_img = document.getElementById(\"page\" + next_page);\n                if (next_img) {\n                        var data = { src: next_img.src, current_page: next_page };\n                        next_url = jQuery(\"#dropdown-menu-page a\").eq(next_page - 1).attr(\"href\");\n                        history.pushState(data, null, next_url);\n                        er(\"v\", ft[0] + \",\" + e.type[0], e, a2, isvc);\n                        updatePageContent(data);\n                        __loaded = current_page;\n                        if (!document.getElementById(\"page\" + (next_page + 1))) {\n                                addNimgsrc(next_page);\n                        }\n                        ft = \"\";\n                        current_page = next_page;\n                        isvc = true;\n                        e.preventDefault();\n                        return false;\n                }\n                return true;\n        };\n        if (!_multimode)\n                jQuery(\"a.prev_page\").on((zv == 1 ? downe : \"mouseup\") + \" click\", prevpagefun);\n        var nextpagefun = function (e, l) {\n                if (e.type != \"click\") {\n                        if (zz == 2) {\n                                if (e.type == \"mouseup\")\n                                        isvc = true;\n                                else\n                                        isvc = false;\n                        }\n                        if (zz == 1) {\n                                if (e.type == downe) {\n                                        isvc = true;\n                                        nextpagefunc = new Date().getTime();\n                                }\n                                else\n                                        isvc = false;\n                        }\n                        ft = e.type;\n                        return true;\n                } else {\n                        if (nextpagefunc > 0) {\n                                a2 = new Date().getTime() - nextpagefunc;\n                                if (a2 < 5)\n                                        isvc = false;\n                                else\n                                        isvc = true;\n                                nextpagefunc = 0;\n                        } else {\n                                if (typeof (ft[0]) == 'undefined' && downe == 'touchstart')\n                                        isvc = true;\n                                else\n                                        isvc = false;\n                        }\n                        if (isvc) {\n                                if (e.originalEvent.isTrusted === false) {\n                                        isvc = false;\n                                } else {\n                                        if (e.originalEvent.isTrusted) {\n                                                e.originalEvent.isTrusted = 2;\n                                                if (e.originalEvent.isTrusted == 2)\n                                                        isvc = false;\n                                                else\n                                                        isvc = true;\n                                        }\n                                }\n                        }\n                }\n                if (fixskippage(e)) {\n                        e.preventDefault();\n                        return false;\n                }\n                var next_page = current_page + 1;\n                if (next_page > total_pages) return true;\n                var next_img = document.getElementById(\"page\" + next_page);\n                if (next_img) {\n                        var data = { src: next_img.src, current_page: next_page };\n                        next_url = jQuery(\"#dropdown-menu-page a\").eq(current_page).attr(\"href\");\n                        history.pushState(data, null, next_url);\n                        er(l, ft[0] + \",\" + e.type[0], e, a2, isvc);\n                        updatePageContent(data);\n                        __loaded = current_page;\n                        if (!document.getElementById(\"page\" + (next_page + 1)) && next_page < total_pages) {\n                                addNimgsrc(next_page);\n                        }\n                        ft = \"\";\n                        current_page = next_page;\n                        isvc = true;\n                        e.preventDefault();\n                        return false;\n                }\n                return true;\n        };\n        if (!_multimode) {\n                jQuery(\"#pic_container\").on((zz == 1 ? downe : \"mouseup\") + \" click\", function (e) { nextpagefun(e, \"n\"); });\n                jQuery(\"a.next_page\").on((zz == 1 ? downe : \"mouseup\") + \" click\", function (e) { nextpagefun(e, \"x\"); });\n        }\n        window.addEventListener('popstate', function (event) {\n                if (typeof (__loaded) == 'undefined' || __loaded == event.state.current_page) return false;\n                updatePageContent(event.state);\n                __loaded = event.state.current_page;\n        });\n        history.replaceState({ src: jQuery(\"#page1\").attr(\"src\"), current_page: current_page }, document.title, document.location.href);\n}\nif (!nisvc) {\n        jQuery(document).bind('keydown', function (event) {\n                if (event.target == document.getElementById(\"lookupwords\")) return true;\n                var code = event.keyCode;\n                switch (code) {\n                        case 37:\n                                if (_multimode)\n                                        window.location.href = jQuery(\".prev_page\").attr(\"href\");\n                                else {\n                                        if (current_page == 1)\n                                                window.location.href = jQuery(\".prev_page\").attr(\"href\");\n                                        else\n                                                jQuery(\".prev_page\").eq(0).click();\n                                }\n                                break;\n                        case 39:\n                                if (_multimode)\n                                        window.location.href = jQuery(\".next_page\").attr(\"href\");\n                                else {\n                                        var cc = current_page;\n                                        jQuery(\"#pic_container\").click();\n                                        if (current_page == cc)\n                                                window.location.href = jQuery(\".next_page\").attr(\"href\");\n                                }\n                                break;\n                        default:\n                                return;\n                }\n        });\n}\n\n\n\n\n\nfunction Chapters(request, extra, javascriptConfig, output) {\n        this.request = request;\n        this.extra = extra;\n        this.javascriptConfig = javascriptConfig;\n        this.output = output;\n}\n\nfunction ModuleRequest(url, method, headers, httpBody) {\n        this.url = url;\n        this.method = method;\n        this.headers = headers;\n        this.httpBody = httpBody;\n}\n\nfunction Extra(commands, extraInfo) {\n        this.commands = commands;\n        this.extraInfo = extraInfo;\n}\n\nfunction Commands(commandName, params) {\n        this.commandName = commandName;\n        this.params = params;\n}\n\nfunction JavascriptConfig(removeJavascript, loadInWebView, javaScript) {\n        this.removeJavascript = removeJavascript;\n        this.loadInWebView = loadInWebView;\n        this.javaScript = javaScript;\n}\n\nfunction KeyValue(key, value) {\n        this.key = key;\n        this.value = value;\n}\n\nfunction Output(videos, images, text) {\n        this.videos = videos;\n        this.images = images;\n        this.text = text;\n}\n\nfunction Videos(needsResolver, rawVideo) {\n        this.needsResolver = needsResolver;\n        this.rawVideo = rawVideo;\n}\n\nfunction NeedsResolver(resolverIdentifier, link) {\n        this.resolverIdentifier = resolverIdentifier;\n        this.link = link;\n}\n\nfunction RawVideo(video) {\n        this.video = video;\n}\n\nfunction Video(videoQuality, videoLink) {\n        this.videoQuality = videoQuality;\n        this.videoLink = videoLink;\n}\n\nfunction Text(text) {\n        this.text = text;\n}\nconsole.log(\"Hola 2\")\nvar savedData = document.getElementById('ketsu-final-data');\nvar parsedJson = JSON.parse(savedData.innerHTML);\nvar output;\nvar emptyKeyValue = [new KeyValue('Referer', parsedJson.request.url)];\n\nlet imageSelector = document.getElementById('dropdown-menu-page').querySelectorAll('a');\nimageSelector.forEach((sel, index) => {\n        //console.log(sel.href)\n        addNimgsrc(index, true);\n})\n\nlet imgContainer = document.getElementById('pic_container').querySelectorAll('img');\nvar values = {}\nimgContainer.forEach(i => {\n        values[i.id] = i.src;\n        //console.log( i.id + \" -- \" + i.src);\n})\n\n//console.log(values);\nlet images = []\nfor(const clave in values) {\n        images.push(new ModuleRequest(values[clave], 'get', emptyKeyValue, undefined));\n}\n\noutput = new Output(undefined, images, undefined);\nlet emptyExtra = new Extra([new Commands('', emptyKeyValue)], emptyKeyValue);\nvar chaptersObject = new Chapters(new ModuleRequest('', '', emptyKeyValue, null), emptyExtra, new JavascriptConfig(false, false, ''), output);\nvar finalJson = JSON.stringify(chaptersObject);\nsavedData.innerHTML = finalJson; /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
+            },
+            "output": {
+                "moduleID": "",
+                "videos": {
+                    "needsResolver": [
+                        {
+                            "resolverIdentifier": "",
+                            "link": {
+                                "url": "",
+                                "method": "get",
+                                "headers": [{ "key": "key", "value": "value" }],
+                                "httpBody": null
+                            }
+                        }
+                    ],
+                    "rawVideo": [
+                        {
+                            "video": [
+                                {
+                                    "videoQuality": "720",
+                                    "videoLink": {
+                                        "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                                        "method": "get",
+                                        "headers": [
+                                            { "key": "key", "value": "value" }
+                                        ],
+                                        "httpBody": null
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "images": [
+                    {
+                        "url": "empty",
+                        "method": "get",
+                        "headers": [{ "key": "key", "value": "value" }],
+                        "httpBody": null
+                    }
+                ],
+                "text": { "text": "" }
+            },
+            "moduleCreatorIddFiJwtXWowxKhjSdJupN": {
+                "path": "JRohC",
+                "id": "chapters,0cell",
+                "sectionsHidden": [],
+                "options": { "name": "Request" },
+                "cellsHidden": false,
+                "openedMenu": "Javascript",
+                "javascriptEditorScroll": 704,
+                "forceRequest": false,
+                "async": false
+            }
+        }
+    ],
+    "moduleResolvers": [
+        {
+            "resolverInfo": {
+                "resolverName": "",
+                "nameMatches": [""],
+                "developer": "",
+                "moduleID": "",
+                "resolverVersion": 1,
+                "baseURL": "",
+                "moduleCreatorIdzIfCLdgsIHSqOKXcstmM": {
+                    "path": "dtmbG",
+                    "id": "moduleResolvers,0,resolverInfosection",
+                    "sectionsHidden": ["moduleCreatorIdTJggWDAqBFvqiVcBlxQu"],
+                    "options": {
+                        "name": "Resolver Parameters",
+                        "listName": "parameters"
+                    },
+                    "cellsHidden": false
+                },
+                "moduleCreatorIdVcMsxTnkGEaqzznScMAA": {
+                    "path": "SFoEO",
+                    "id": "moduleResolvers,0,resolverInfocell",
+                    "sectionsHidden": ["moduleCreatorIdTJggWDAqBFvqiVcBlxQu"],
+                    "options": { "name": "parameters" },
+                    "cellsHidden": false
+                }
+            },
+            "resolver": [
+                {
+                    "request": {
+                        "url": "empty",
+                        "method": "get",
+                        "headers": [{ "key": "key", "value": "value" }],
+                        "httpBody": null
+                    },
+                    "extra": {
+                        "commands": [
+                            {
+                                "commandName": "",
+                                "params": [{ "key": "", "value": "" }]
+                            }
+                        ],
+                        "extraInfo": [{ "key": "", "value": "" }]
+                    },
+                    "javascriptConfig": {
+                        "removeJavascript": false,
+                        "loadInWebView": false,
+                        "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */                            /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
+                    },
+                    "output": {
+                        "moduleID": "234234823",
+                        "video": [
+                            {
+                                "videoQuality": "720",
+                                "videoLink": {
+                                    "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                                    "method": "get",
+                                    "headers": [
+                                        { "key": "key", "value": "value" }
+                                    ],
+                                    "httpBody": null
+                                }
+                            }
+                        ]
+                    },
+                    "moduleCreatorIdHRdGhWZBRkIOLUYBMMTD": {
+                        "path": "SIGET",
+                        "id": "moduleResolvers,0,resolver,0cell",
+                        "sectionsHidden": [
+                            "moduleCreatorIdTJggWDAqBFvqiVcBlxQu"
+                        ],
+                        "options": { "name": "Request" },
+                        "cellsHidden": false
+                    }
+                }
+            ],
+            "moduleCreatorIdsNIXCZMRuiGJorsZORKm": {
+                "path": "SUbNM",
+                "id": "moduleResolvers,0section",
+                "sectionsHidden": ["moduleCreatorIdTJggWDAqBFvqiVcBlxQu"],
+                "options": { "name": "Resolver" },
+                "cellsHidden": false
+            },
+            "moduleCreatorIdNvTRzaETkwzeVfbVrYMD": {
+                "path": "resolver",
+                "id": "moduleResolvers,0,resolversection",
+                "sectionsHidden": ["moduleCreatorIdTJggWDAqBFvqiVcBlxQu"],
+                "options": {
+                    "name": "Resolver Request",
+                    "listName": "Request"
+                },
+                "cellsHidden": false
+            }
+        }
+    ],
+    "responseCodeFunctions": [
+        {
+            "code": 0,
+            "msgTitle": "",
+            "msgBody": "",
+            "type": "normal",
+            "functions": [
+                {
+                    "request": {
+                        "url": "empty",
+                        "method": "get",
+                        "headers": [{ "key": "key", "value": "value" }],
+                        "httpBody": null
+                    },
+                    "extra": {
+                        "commands": [
+                            {
+                                "commandName": "",
+                                "params": [{ "key": "", "value": "" }]
+                            }
+                        ],
+                        "extraInfo": [{ "key": "", "value": "" }]
+                    },
+                    "javascriptConfig": {
+                        "removeJavascript": true,
+                        "loadInWebView": false,
+                        "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */                            /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
+                    },
+                    "moduleCreatorIdefbScPATLLNjUUTRNZxB": {
+                        "path": "aoefw",
+                        "id": "responseCodeFunctions,0,functions,0cell",
+                        "sectionsHidden": [
+                            "moduleCreatorIdUYJQQlDvEfDQLgnvbZXb"
+                        ],
+                        "options": { "name": "Request" },
+                        "cellsHidden": false
+                    }
+                }
+            ],
+            "moduleCreatorIdLQiZzHhugzfnNaYgYMcr": {
+                "path": "sItCq",
+                "id": "responseCodeFunctions,0section",
+                "sectionsHidden": ["moduleCreatorIdUYJQQlDvEfDQLgnvbZXb"],
+                "options": { "name": "Function" },
+                "cellsHidden": false
+            },
+            "moduleCreatorIdpVdipQlgReXFzSLJtNTK": {
+                "path": "LcQJV",
+                "id": "responseCodeFunctions,0,section",
+                "sectionsHidden": ["moduleCreatorIdUYJQQlDvEfDQLgnvbZXb"],
+                "options": {
+                    "name": "Function Parameters",
+                    "listName": "Parameters"
+                },
+                "cellsHidden": false
+            },
+            "moduleCreatorIdcoIUrpVsenjetLGFkDQW": {
+                "path": "MXrlr",
+                "id": "responseCodeFunctions,0,cell",
+                "sectionsHidden": ["moduleCreatorIdUYJQQlDvEfDQLgnvbZXb"],
+                "options": { "name": "Parameters" },
+                "cellsHidden": false
+            },
+            "moduleCreatorIdkdrZCDVbADYXXUMYZnWk": {
+                "path": "functions",
+                "id": "responseCodeFunctions,0,functionssection",
+                "sectionsHidden": ["moduleCreatorIdUYJQQlDvEfDQLgnvbZXb"],
+                "options": {
+                    "name": "Function Requests",
+                    "listName": "Request"
+                },
+                "cellsHidden": false
+            }
+        }
+    ],
+    "helperFunctions": [
+        {
+            "functionName": "example",
+            "msgTitle": "",
+            "msgBody": "",
+            "type": "normal",
+            "functions": [
+                {
+                    "request": {
+                        "url": "empty",
+                        "method": "get",
+                        "headers": [{ "key": "key", "value": "value" }],
+                        "httpBody": null
+                    },
+                    "extra": {
+                        "commands": [
+                            {
+                                "commandName": "",
+                                "params": [{ "key": "", "value": "" }]
+                            }
+                        ],
+                        "extraInfo": [{ "key": "", "value": "" }]
+                    },
+                    "javascriptConfig": {
+                        "removeJavascript": true,
+                        "loadInWebView": false,
+                        "javaScript": "\n        try {\n\n            /* JAVASCRIPT STARTS */                            /* JAVASCRIPT ENDS */\n\n        } catch (e) {\n            console.error(e.message);\n\n            if (typeof KETSU_ASYNC !== 'undefined') {\n                window.webkit.messageHandlers.EXECUTE_KETSU_ASYNC.postMessage('');\n            }\n\n        }\n        \n        "
+                    },
+                    "moduleCreatorIdmjOfEbJeqjMswWnCprjg": {
+                        "path": "AKAjj",
+                        "id": "helperFunctions,0,functions,0cell",
+                        "sectionsHidden": [
+                            "moduleCreatorIdrKNilXGeXcglTFmsUnGd"
+                        ],
+                        "options": { "name": "Request" },
+                        "cellsHidden": false
+                    }
+                }
+            ],
+            "moduleCreatorIdiPjLlICpjMpsJWtrTyPn": {
+                "path": "WJQCj",
+                "id": "helperFunctions,0section",
+                "sectionsHidden": ["moduleCreatorIdrKNilXGeXcglTFmsUnGd"],
+                "options": { "name": "Request" },
+                "cellsHidden": false
+            },
+            "moduleCreatorIdDeeUqXBLstgtUpsuwLye": {
+                "path": "IPoqs",
+                "id": "helperFunctions,0,section",
+                "sectionsHidden": ["moduleCreatorIdrKNilXGeXcglTFmsUnGd"],
+                "options": {
+                    "name": "Function Parameters",
+                    "listName": "Parameters"
+                },
+                "cellsHidden": false
+            },
+            "moduleCreatorIdbWlamuZddQhwLlCIqEpa": {
+                "path": "HUvNZ",
+                "id": "helperFunctions,0,cell",
+                "sectionsHidden": ["moduleCreatorIdrKNilXGeXcglTFmsUnGd"],
+                "options": { "name": "Parameters" },
+                "cellsHidden": false
+            },
+            "moduleCreatorIdzantYhLVXdqOsshjfOyF": {
+                "path": "functions",
+                "id": "helperFunctions,0,functionssection",
+                "sectionsHidden": ["moduleCreatorIdrKNilXGeXcglTFmsUnGd"],
+                "options": {
+                    "name": "Function Requests",
+                    "listName": "Request"
+                },
+                "cellsHidden": false
+            }
+        }
+    ],
+    "moduleCreatorGlobalOptions": {
+        "selected": "moduleCreatorIdBTIkthMuOSfoFknoxtSp",
+        "notesData": {
+            "openedNotes": [],
+            "activeNote": "oFwjzvDpdfxlaKQrGUwc",
+            "notes": {}
+        },
+        "hideViews": [],
+        "id": "UlqNoUDbDnmCZrZ",
+        "projectName": "Manga Go"
+    },
+    "moduleCreatorIdiNySvRlUeEREPVoxsLpc": {
+        "path": "mainPage",
+        "id": "mainPagesection",
+        "sectionsHidden": [],
+        "options": { "name": "Main Page", "listName": "Request" },
+        "cellsHidden": false
+    },
+    "moduleCreatorIdjGjaLqdsLOAuHQWSRlEF": {
+        "path": "search",
+        "id": "searchsection",
+        "sectionsHidden": [],
+        "options": { "name": "Search Page", "listName": "Request" },
+        "cellsHidden": false
+    },
+    "moduleCreatorIdTzdjeOPcRpVogMDawQVo": {
+        "path": "info",
+        "id": "infosection",
+        "sectionsHidden": [],
+        "options": { "name": "Info Page", "listName": "Request" },
+        "cellsHidden": false
+    },
+    "moduleCreatorIdrFoxrFFxIRJVXxLzMZWa": {
+        "path": "chapters",
+        "id": "chapterssection",
+        "sectionsHidden": [],
+        "options": { "name": "Chapters", "listName": "Request" },
+        "cellsHidden": false
+    },
+    "moduleCreatorIdTJggWDAqBFvqiVcBlxQu": {
+        "path": "moduleResolvers",
+        "id": "moduleResolverssection",
+        "sectionsHidden": [],
+        "options": { "name": "Resolvers", "listName": "Resolver" },
+        "cellsHidden": true
+    },
+    "moduleCreatorIdUYJQQlDvEfDQLgnvbZXb": {
+        "path": "responseCodeFunctions",
+        "id": "responseCodeFunctionssection",
+        "sectionsHidden": [],
+        "options": { "name": "Response Code Funtions", "listName": "Function" },
+        "cellsHidden": true
+    },
+    "moduleCreatorIdrKNilXGeXcglTFmsUnGd": {
+        "path": "helperFunctions",
+        "id": "helperFunctionssection",
+        "sectionsHidden": [],
+        "options": { "name": "Helper Functions", "listName": "Request" },
+        "cellsHidden": true
+    }
+}
