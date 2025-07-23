@@ -10,8 +10,8 @@
     "moduleLenguage": "ESP",
     "moduleType": "Image",
     "baseURL": "http://mangadoor.com/",
-    "moduleDeveloperSite": "",
-    "UpdateSite": "",
+    "moduleDeveloperSite": "https://letters01.github.io/",
+    "UpdateSite": "https://github.com/letters01/letters01.github.io/raw/main/modules/MangaDoor.json",
     "preferedServer": "",
     "preferedDownloadServer": "",
     "blackListed": [

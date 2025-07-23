@@ -10,8 +10,8 @@
     "moduleLenguage": "ESP",
     "moduleType": "Image",
     "baseURL": "https://vermanhwa.es/",
-    "moduleDeveloperSite": "",
-    "UpdateSite": "",
+    "moduleDeveloperSite": "https://letters01.github.io/",
+    "UpdateSite": "https://github.com/letters01/letters01.github.io/raw/main/modules/VerManhwas.json",
     "preferedServer": "",
     "preferedDownloadServer": "",
     "blackListed": [

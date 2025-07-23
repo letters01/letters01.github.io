@@ -11,7 +11,7 @@
         "moduleType": "Image",
         "baseURL": "https://www.mangago.me/",
         "moduleDeveloperSite": "https://letters01.github.io/",
-        "UpdateSite": "",
+        "UpdateSite": "https://github.com/letters01/letters01.github.io/raw/main/modules/MangaGo.json",
         "preferedServer": "",
         "preferedDownloadServer": "",
         "blackListed": [""],
