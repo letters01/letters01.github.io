@@ -6,7 +6,7 @@
         "developer": "Letters",
         "moduleID": "XBato-1",
         "moduleImage": "https://xbato.com/amsta/img/batoto/favicon.ico?v0",
-        "moduleVersion": 1,
+        "moduleVersion": 1.2,
         "moduleLenguage": "ENG",
         "moduleType": "Image",
         "baseURL": "https://xbato.com/",
@@ -290,7 +290,7 @@
                 "options": { "name": "Request" },
                 "cellsHidden": false,
                 "openedMenu": "Request",
-                "javascriptEditorScroll": 139
+                "javascriptEditorScroll": 140
             }
         }
     ],
@@ -368,8 +368,8 @@
                 "sectionsHidden": [],
                 "options": { "name": "Request" },
                 "cellsHidden": false,
-                "openedMenu": "Request",
-                "javascriptEditorScroll": 157
+                "openedMenu": "Javascript",
+                "javascriptEditorScroll": 164
             }
         }
     ],
@@ -616,7 +616,7 @@
         }
     ],
     "moduleCreatorGlobalOptions": {
-        "selected": "moduleCreatorIdGDllPpaUsXxAfxNPhZjb",
+        "selected": "moduleCreatorIdVaaRriJlsqIFfSpzjpYY",
         "notesData": {
             "openedNotes": [],
             "activeNote": "oFwjzvDpdfxlaKQrGUwc",
