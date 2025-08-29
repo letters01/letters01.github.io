@@ -11,7 +11,7 @@
         "moduleType": "Image",
         "baseURL": "https://xbato.com/",
         "moduleDeveloperSite": "https://letters01.github.io/",
-        "UpdateSite": "https://github.com/letters01/letters01.github.io/raw/main/modules/XBato.json",
+        "UpdateSite": "https://raw.githubusercontent.com/letters01/letters01.github.io/refs/heads/main/modules/XBato.json",
         "preferedServer": "",
         "preferedDownloadServer": "",
         "blackListed": [""],

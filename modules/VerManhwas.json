@@ -11,7 +11,7 @@
     "moduleType": "Image",
     "baseURL": "https://vermanhwa.es/",
     "moduleDeveloperSite": "https://letters01.github.io/",
-    "UpdateSite": "https://github.com/letters01/letters01.github.io/raw/main/modules/VerManhwas.json",
+    "UpdateSite": "https://raw.githubusercontent.com/letters01/letters01.github.io/refs/heads/main/modules/VerManhwas.json",
     "preferedServer": "",
     "preferedDownloadServer": "",
     "blackListed": [
